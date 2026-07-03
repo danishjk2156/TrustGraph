@@ -58,5 +58,20 @@
     "contradiction_group": null,
     "contradiction_explanation": "Both facts describe statement.says but disagree: \"what's up\" vs 'hi'.",
     "cognee_data_id": null
+  },
+  {
+    "fact_id": "e8d050f8-4e9f-4e82-a946-0208425e25f0",
+    "original_text": "I'm doing well, thanks.\n\nWeb Verification: Web results support the idea that \"how are you\" is a common greeting and provide various ways to ask and respond to it, but they do not verify my personal state. Relevant web result titles include \"60+ Different Ways to Ask & Respond to 'How are you?'\" (https://eslforums.com/how-are-you/) and \"100 Common Responses to 'How Are You?'\" (https://www.englishgrammar.org/common-responses-how-are-you/).",
+    "normalized_text": "how  are you -> I'm doing well, thanks.",
+    "subject": "how  are you",
+    "predicate": "answered_by",
+    "object_value": "I'm doing well, thanks.",
+    "timestamp": "2026-07-03T20:18:40.078508",
+    "reinforcement_count": 0,
+    "source": "web_answer",
+    "status": "active",
+    "contradiction_group": null,
+    "contradiction_explanation": null,
+    "cognee_data_id": "5dbd7253-b6ab-532e-94d7-34110ca1f101"
   }
 ]

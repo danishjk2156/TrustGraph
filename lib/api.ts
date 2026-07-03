@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8001';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -8,6 +8,17 @@ const api = axios.create({
     'Content-Type': 'application/json',
   },
 });
+
+// Dynamically update baseURL from settings saved in localStorage
+if (typeof window !== 'undefined') {
+  api.interceptors.request.use((config) => {
+    const savedUrl = localStorage.getItem('apiUrl');
+    if (savedUrl) {
+      config.baseURL = savedUrl;
+    }
+    return config;
+  });
+}
 
 export interface Message {
   id: string;

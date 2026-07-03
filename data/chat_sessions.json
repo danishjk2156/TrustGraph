@@ -832,5 +832,516 @@
         }
       }
     ]
+  },
+  "c52e5ad1-9137-4034-a632-96e08db1b2c7": {
+    "id": "c52e5ad1-9137-4034-a632-96e08db1b2c7",
+    "title": "New Chat",
+    "created_at": "2026-07-03T20:08:09.904464",
+    "updated_at": "2026-07-03T20:08:09.904464",
+    "messages": []
+  },
+  "4d59ddf1-9b02-43bb-a848-2b1cc8b5238c": {
+    "id": "4d59ddf1-9b02-43bb-a848-2b1cc8b5238c",
+    "title": "hi",
+    "created_at": "2026-07-03T20:08:09.947132",
+    "updated_at": "2026-07-03T20:11:01.948827",
+    "messages": [
+      {
+        "id": "7e3d2987-d665-4048-933e-8d06d82cad50",
+        "role": "user",
+        "content": "hi",
+        "created_at": "2026-07-03T20:08:58.123657"
+      },
+      {
+        "id": "5f96bc79-9002-4295-a3c4-604bfc9cebd8",
+        "role": "assistant",
+        "content": "hi. Trust: 0.79 | Reinforced 1x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: HI | English meaning - Cambridge Dictionary (https://dictionary.cambridge.org/dictionary/english/hi); HI Definition & Meaning - Merriam-Webster (https://www.merriam-webster.com/dictionary/hi); Hi, Hello Song! Greeting Song for Kids | Preschool Songs | A Little ... (https://www.youtube.com/watch?v=T-wvRTDieGQ)",
+        "created_at": "2026-07-03T20:09:00.233082",
+        "query": {
+          "query_text": "hi",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+                "original_text": "hi",
+                "normalized_text": "hi",
+                "subject": "statement",
+                "predicate": "says",
+                "object_value": "hi",
+                "timestamp": "2026-07-03T19:17:26.242006",
+                "reinforcement_count": 1,
+                "source": "frontend",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": "Both facts describe statement.says but disagree: \"what's up\" vs 'hi'.",
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+                "score": 0.7862853996627391,
+                "recency_component": 0.9964278264054022,
+                "reinforcement_component": 0.3934693402873666,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.39, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "original_text": "hi how  are you",
+                "normalized_text": "hi how are you",
+                "subject": "hi how",
+                "predicate": "are",
+                "object_value": "you",
+                "timestamp": "2026-07-03T17:02:26.146139",
+                "reinforcement_count": 0,
+                "source": "chat",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "score": 0.6448519431269985,
+                "recency_component": 0.9871298578174961,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.99, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "hi. Trust: 0.79 | Reinforced 1x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: HI | English meaning - Cambridge Dictionary (https://dictionary.cambridge.org/dictionary/english/hi); HI Definition & Meaning - Merriam-Webster (https://www.merriam-webster.com/dictionary/hi); Hi, Hello Song! Greeting Song for Kids | Preschool Songs | A Little ... (https://www.youtube.com/watch?v=T-wvRTDieGQ)",
+          "web_results": [
+            {
+              "title": "HI | English meaning - Cambridge Dictionary",
+              "snippet": "HI definition: 1. used as an informal greeting, usually to people who you know: 2. written abbreviation for the\u2026. Learn more.",
+              "url": "https://dictionary.cambridge.org/dictionary/english/hi"
+            },
+            {
+              "title": "HI Definition & Meaning - Merriam-Webster",
+              "snippet": "The meaning of HI is \u2014used especially as a greeting. How to use hi in a sentence.",
+              "url": "https://www.merriam-webster.com/dictionary/hi"
+            },
+            {
+              "title": "Hi, Hello Song! Greeting Song for Kids | Preschool Songs | A Little ...",
+              "snippet": "Perfect song for morning greetings! This song is perfect for both native English speakers and young learners of English as a second language.Lyrics:Hi, Hello...",
+              "url": "https://www.youtube.com/watch?v=T-wvRTDieGQ"
+            },
+            {
+              "title": "Hi Meaning - YouTube",
+              "snippet": "Video shows what hi means. A friendly, informal, casual greeting said when meeting someone.. An exclamation to call attention.. hi synonyms: greeting, hello....",
+              "url": "https://www.youtube.com/watch?v=5aJPNHnkwjw"
+            },
+            {
+              "title": "Hi: Definition, Meaning, and Examples - US Dictionary",
+              "snippet": "What is the meaning and origin of the word \" hi \"? Learn how this word has been used to greet and express interest in others.",
+              "url": "https://usdictionary.com/definitions/hi/"
+            },
+            {
+              "title": "HI Simple Definition - Merriam-Webster",
+              "snippet": "The simple definition of HI is \u2014used as an informal way of saying 'hello'.",
+              "url": "https://www.merriam-webster.com/simple/hi"
+            },
+            {
+              "title": "Hi Definition & Meaning | YourDictionary",
+              "snippet": "Hi definition: Used to express greeting. Origin of Hi American English (first recorded reference is to speech of a Kansas Indian), originally to attract attention, probably a variant of Middle English hy, hey (circa 1475) also an exclamation to call attention. From Wiktionary",
+              "url": "https://www.yourdictionary.com/hi"
+            },
+            {
+              "title": "The Meaning and Use of \"Hi\" in English: A Comprehensive Guide",
+              "snippet": "In daily life and digital communication, greetings serve as an essential way to initiate conversation and establish rapport. Among the many greetings in English, \" hi \" stands out as a simple, friendly, and widely used word. But what exactly does \" hi \" mean, how did it originate, and how is it properly used? In this comprehensive guide, we will explore the origins, appropriate contexts, cultural ...",
+              "url": "https://theenglishtoday.com/the-meaning-and-use-of-hi-in-english-a-comprehensive-guide/"
+            },
+            {
+              "title": "Different Ways to Say Hello in English and How to Respond",
+              "snippet": "Hellllooooo! Hi ! What's up? There are so many different ways to greet someone in English and start a conversation. Hello is the most common, but if you want a different word or phrase, well, keep reading!",
+              "url": "https://blog.duolingo.com/hello-in-english/"
+            },
+            {
+              "title": "Hi.AI for Android - Download the APK from Uptodown",
+              "snippet": "Download the APK of Hi .AI for Android for free. Enjoy conversations with AI characters. Hi .AI is an app that allows you to engage in conversations with all...",
+              "url": "https://hi-ai.en.uptodown.com/android"
+            }
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "74477a36-80bb-4f0b-9faf-ffb5ecd5d102",
+        "role": "user",
+        "content": "what up",
+        "created_at": "2026-07-03T20:09:07.226702"
+      },
+      {
+        "id": "fe6fb2ce-d6bd-403c-a04c-bd3330a4c7cc",
+        "role": "assistant",
+        "content": "hi. Trust: 0.79 | Reinforced 1x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: WhatsApp Web (https://web.whatsapp.com/); Download WhatsApp (https://www.whatsapp.com/download); WhatsApp (https://wa.me/)",
+        "created_at": "2026-07-03T20:09:08.323608",
+        "query": {
+          "query_text": "what up",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+                "original_text": "hi",
+                "normalized_text": "hi",
+                "subject": "statement",
+                "predicate": "says",
+                "object_value": "hi",
+                "timestamp": "2026-07-03T19:17:26.242006",
+                "reinforcement_count": 1,
+                "source": "frontend",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": "Both facts describe statement.says but disagree: \"what's up\" vs 'hi'.",
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+                "score": 0.7862812008261058,
+                "recency_component": 0.9964173293138185,
+                "reinforcement_component": 0.3934693402873666,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.39, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "original_text": "hi how  are you",
+                "normalized_text": "hi how are you",
+                "subject": "hi how",
+                "predicate": "are",
+                "object_value": "you",
+                "timestamp": "2026-07-03T17:02:26.146139",
+                "reinforcement_count": 0,
+                "source": "chat",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "score": 0.644847783470976,
+                "recency_component": 0.98711945867744,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.99, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "hi. Trust: 0.79 | Reinforced 1x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: WhatsApp Web (https://web.whatsapp.com/); Download WhatsApp (https://www.whatsapp.com/download); WhatsApp (https://wa.me/)",
+          "web_results": [
+            {
+              "title": "WhatsApp Web",
+              "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with ease, all for free.",
+              "url": "https://web.whatsapp.com/"
+            },
+            {
+              "title": "Download WhatsApp",
+              "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. Available on Android, iOS, Mac and Windows.",
+              "url": "https://www.whatsapp.com/download"
+            },
+            {
+              "title": "WhatsApp",
+              "snippet": "Hosted by WhatsApp 2026 \u00a9 WhatsApp LLC Privacy & Terms",
+              "url": "https://wa.me/"
+            },
+            {
+              "title": "WhatsApp Messenger - Apps on Google Play",
+              "snippet": "Make secure video and voice calls with up to 32 people for free*. Your calls work across mobile devices using your phone's Internet service, even on slow connections.",
+              "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=en"
+            },
+            {
+              "title": "WhatsApp - Download",
+              "snippet": "WhatsApp, free and safe download. WhatsApp latest version: A connection without boundaries. WhatsApp is a communication platform for mobile and deskto",
+              "url": "https://whatsapp.en.softonic.com/"
+            },
+            {
+              "title": "4 Non Blondes - What's Up (Lyrics) - YouTube",
+              "snippet": "\u266b 4 Non Blondes - What's UpStream/Download :https://4NonBlondes.lnk.to/Essentials\u2022 4 Non Blondes \u2022 \u2022 https://www.facebook.com/4nonblondes/\u2022 https://twitter.c...",
+              "url": "https://www.youtube.com/watch?v=XDb_K4KF2qw"
+            },
+            {
+              "title": "Download WhatsApp (free) for Windows, macOS, Android, APK, iOS ... - Kotaku",
+              "snippet": "WhatsApp helps you stay connected through fast, private messaging and secure voice or video calls. It keeps your chats protected with end-to-end encryption and makes it easy to communicate with ...",
+              "url": "https://kotaku.com/download/whatsapp"
+            },
+            {
+              "title": "4 Non Blondes - What's Up? (Lyrics) - YouTube",
+              "snippet": "[Verse 1] Twenty-five years and my life is still Tryin' to get up that great big hill of hope For a destination I realized quickly when I knew I should That the world was made up of this ...",
+              "url": "https://www.youtube.com/watch?v=ncNMjAPXXcQ"
+            },
+            {
+              "title": "Download WhatsApp (free) for Windows, macOS, Android, APK ... - Gizmodo",
+              "snippet": "WhatsApp is a messaging app that enables users to instantly connect with family, friends, and professional contacts. Once you download WhatsApp, you can enjoy a wide array of functionalities that ...",
+              "url": "https://gizmodo.com/download/whatsapp"
+            },
+            {
+              "title": "What's Up? - song and lyrics by 4 Non Blondes | Spotify",
+              "snippet": "Listen to What's Up ? on Spotify. Song \u00b7 4 Non Blondes \u00b7 1992",
+              "url": "https://open.spotify.com/track/0jWgAnTrNZmOGmqgvHhZEm"
+            }
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "a3079fa8-e442-45d3-a2ea-e3c5c95ecc20",
+        "role": "user",
+        "content": "hi",
+        "created_at": "2026-07-03T20:10:59.937501"
+      },
+      {
+        "id": "92fc344f-41fc-4423-850e-612daf23b0cc",
+        "role": "assistant",
+        "content": "hi. Trust: 0.79 | Reinforced 1x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: HI | English meaning - Cambridge Dictionary (https://dictionary.cambridge.org/dictionary/english/hi); HI Definition & Meaning - Merriam-Webster (https://www.merriam-webster.com/dictionary/hi); Hi, Hello Song! Greeting Song for Kids | Preschool Songs | A Little ... (https://www.youtube.com/watch?v=T-wvRTDieGQ)",
+        "created_at": "2026-07-03T20:11:01.948827",
+        "query": {
+          "query_text": "hi",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+                "original_text": "hi",
+                "normalized_text": "hi",
+                "subject": "statement",
+                "predicate": "says",
+                "object_value": "hi",
+                "timestamp": "2026-07-03T19:17:26.242006",
+                "reinforcement_count": 1,
+                "source": "frontend",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": "Both facts describe statement.says but disagree: \"what's up\" vs 'hi'.",
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+                "score": 0.7862292097809193,
+                "recency_component": 0.9962873517008524,
+                "reinforcement_component": 0.3934693402873666,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.39, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "original_text": "hi how  are you",
+                "normalized_text": "hi how are you",
+                "subject": "hi how",
+                "predicate": "are",
+                "object_value": "you",
+                "timestamp": "2026-07-03T17:02:26.146139",
+                "reinforcement_count": 0,
+                "source": "chat",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "score": 0.6447962775699136,
+                "recency_component": 0.986990693924784,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.99, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "hi. Trust: 0.79 | Reinforced 1x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: HI | English meaning - Cambridge Dictionary (https://dictionary.cambridge.org/dictionary/english/hi); HI Definition & Meaning - Merriam-Webster (https://www.merriam-webster.com/dictionary/hi); Hi, Hello Song! Greeting Song for Kids | Preschool Songs | A Little ... (https://www.youtube.com/watch?v=T-wvRTDieGQ)",
+          "web_results": [
+            {
+              "title": "HI | English meaning - Cambridge Dictionary",
+              "snippet": "HI definition: 1. used as an informal greeting, usually to people who you know: 2. written abbreviation for the\u2026. Learn more.",
+              "url": "https://dictionary.cambridge.org/dictionary/english/hi"
+            },
+            {
+              "title": "HI Definition & Meaning - Merriam-Webster",
+              "snippet": "The meaning of HI is \u2014used especially as a greeting. How to use hi in a sentence.",
+              "url": "https://www.merriam-webster.com/dictionary/hi"
+            },
+            {
+              "title": "Hi, Hello Song! Greeting Song for Kids | Preschool Songs | A Little ...",
+              "snippet": "Perfect song for morning greetings! This song is perfect for both native English speakers and young learners of English as a second language.Lyrics:Hi, Hello...",
+              "url": "https://www.youtube.com/watch?v=T-wvRTDieGQ"
+            },
+            {
+              "title": "Hi Meaning - YouTube",
+              "snippet": "Video shows what hi means. A friendly, informal, casual greeting said when meeting someone.. An exclamation to call attention.. hi synonyms: greeting, hello....",
+              "url": "https://www.youtube.com/watch?v=5aJPNHnkwjw"
+            },
+            {
+              "title": "Hi: Definition, Meaning, and Examples - US Dictionary",
+              "snippet": "What is the meaning and origin of the word \" hi \"? Learn how this word has been used to greet and express interest in others.",
+              "url": "https://usdictionary.com/definitions/hi/"
+            },
+            {
+              "title": "HI Simple Definition - Merriam-Webster",
+              "snippet": "The simple definition of HI is \u2014used as an informal way of saying 'hello'.",
+              "url": "https://www.merriam-webster.com/simple/hi"
+            },
+            {
+              "title": "Hi Definition & Meaning | YourDictionary",
+              "snippet": "Hi definition: Used to express greeting. Origin of Hi American English (first recorded reference is to speech of a Kansas Indian), originally to attract attention, probably a variant of Middle English hy, hey (circa 1475) also an exclamation to call attention. From Wiktionary",
+              "url": "https://www.yourdictionary.com/hi"
+            },
+            {
+              "title": "The Meaning and Use of \"Hi\" in English: A Comprehensive Guide",
+              "snippet": "In daily life and digital communication, greetings serve as an essential way to initiate conversation and establish rapport. Among the many greetings in English, \" hi \" stands out as a simple, friendly, and widely used word. But what exactly does \" hi \" mean, how did it originate, and how is it properly used? In this comprehensive guide, we will explore the origins, appropriate contexts, cultural ...",
+              "url": "https://theenglishtoday.com/the-meaning-and-use-of-hi-in-english-a-comprehensive-guide/"
+            },
+            {
+              "title": "Hi.AI for Android - Download the APK from Uptodown",
+              "snippet": "Download the APK of Hi .AI for Android for free. Enjoy conversations with AI characters. Hi .AI is an app that allows you to engage in conversations with all...",
+              "url": "https://hi-ai.en.uptodown.com/android"
+            },
+            {
+              "title": "Different Ways to Say Hello in English and How to Respond",
+              "snippet": "Hellllooooo! Hi ! What's up? There are so many different ways to greet someone in English and start a conversation. Hello is the most common, but if you want a different word or phrase, well, keep reading!",
+              "url": "https://blog.duolingo.com/hello-in-english/"
+            }
+          ],
+          "contradictions": []
+        }
+      }
+    ]
+  },
+  "ab6f153f-7fef-43f5-a016-c08c4b8436d4": {
+    "id": "ab6f153f-7fef-43f5-a016-c08c4b8436d4",
+    "title": "123",
+    "created_at": "2026-07-03T20:12:46.935265",
+    "updated_at": "2026-07-03T20:22:10.489364",
+    "messages": [
+      {
+        "id": "4162577f-641f-4735-bcd2-77b493cad1bc",
+        "role": "user",
+        "content": "hi",
+        "created_at": "2026-07-03T20:21:56.204130"
+      },
+      {
+        "id": "5055a931-7737-4ace-9e99-f8486e27f619",
+        "role": "assistant",
+        "content": "Hello. How can I assist you today?\n\nWeb Verification: No web results are available to verify the greeting.",
+        "created_at": "2026-07-03T20:22:10.489364",
+        "query": {
+          "query_text": "hi",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+                "original_text": "hi",
+                "normalized_text": "hi",
+                "subject": "statement",
+                "predicate": "says",
+                "object_value": "hi",
+                "timestamp": "2026-07-03T19:17:26.242006",
+                "reinforcement_count": 1,
+                "source": "frontend",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": "Both facts describe statement.says but disagree: \"what's up\" vs 'hi'.",
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+                "score": 0.785921493729868,
+                "recency_component": 0.9955180615732241,
+                "reinforcement_component": 0.3934693402873666,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.39, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "e8d050f8-4e9f-4e82-a946-0208425e25f0",
+                "original_text": "I'm doing well, thanks.\n\nWeb Verification: Web results support the idea that \"how are you\" is a common greeting and provide various ways to ask and respond to it, but they do not verify my personal state. Relevant web result titles include \"60+ Different Ways to Ask & Respond to 'How are you?'\" (https://eslforums.com/how-are-you/) and \"100 Common Responses to 'How Are You?'\" (https://www.englishgrammar.org/common-responses-how-are-you/).",
+                "normalized_text": "how  are you -> I'm doing well, thanks.",
+                "subject": "how  are you",
+                "predicate": "answered_by",
+                "object_value": "I'm doing well, thanks.",
+                "timestamp": "2026-07-03T20:18:40.078508",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "5dbd7253-b6ab-532e-94d7-34110ca1f101"
+              },
+              "trust_score": {
+                "fact_id": "e8d050f8-4e9f-4e82-a946-0208425e25f0",
+                "score": 0.6499040567480396,
+                "recency_component": 0.999760141870099,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "original_text": "hi how  are you",
+                "normalized_text": "hi how are you",
+                "subject": "hi how",
+                "predicate": "are",
+                "object_value": "you",
+                "timestamp": "2026-07-03T17:02:26.146139",
+                "reinforcement_count": 0,
+                "source": "chat",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "score": 0.6444914329507834,
+                "recency_component": 0.9862285823769583,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.99, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "Hello. How can I assist you today?\n\nWeb Verification: No web results are available to verify the greeting.",
+          "web_results": [],
+          "contradictions": []
+        }
+      }
+    ]
+  },
+  "8f7ae302-e947-40de-9e99-36efade67ae0": {
+    "id": "8f7ae302-e947-40de-9e99-36efade67ae0",
+    "title": "New Chat",
+    "created_at": "2026-07-03T20:21:11.460030",
+    "updated_at": "2026-07-03T20:21:11.460030",
+    "messages": []
+  },
+  "f725562d-8607-4bae-85f3-f7c29719ae2e": {
+    "id": "f725562d-8607-4bae-85f3-f7c29719ae2e",
+    "title": "New Chat",
+    "created_at": "2026-07-03T20:21:11.526247",
+    "updated_at": "2026-07-03T20:21:11.526247",
+    "messages": []
+  },
+  "2bcff6eb-f5dc-4359-be01-77d386b7bb98": {
+    "id": "2bcff6eb-f5dc-4359-be01-77d386b7bb98",
+    "title": "New Chat",
+    "created_at": "2026-07-03T20:21:11.614070",
+    "updated_at": "2026-07-03T20:21:11.614070",
+    "messages": []
   }
 }
