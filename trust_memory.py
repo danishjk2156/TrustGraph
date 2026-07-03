@@ -7,7 +7,9 @@ import os
 # Load .env file
 try:
     from dotenv import load_dotenv
-    load_dotenv()
+    from pathlib import Path
+    env_path = Path(__file__).resolve().parent / ".env"
+    load_dotenv(dotenv_path=env_path)
 except ImportError:
     from pathlib import Path
     env_path = Path(__file__).resolve().parent / ".env"
