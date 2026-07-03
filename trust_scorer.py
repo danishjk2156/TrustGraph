@@ -13,7 +13,7 @@ from trustgraph.models import FactStatus, TrustMetadata, TrustScore
 class TrustScorer:
     """Scores facts from recency, reinforcement, and consistency signals."""
 
-    w_recency: float = 0.4
+    w_recency: float = 0.40
     w_reinforce: float = 0.35
     w_consistency: float = 0.25
     recency_lambda: float = 0.1

@@ -2,16 +2,47 @@
 
 from __future__ import annotations
 
+import os
+
+# Load .env file
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    from pathlib import Path
+    env_path = Path(__file__).resolve().parent / ".env"
+    if env_path.exists():
+        for line in env_path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, val = line.split("=", 1)
+                os.environ[key.strip()] = val.strip().strip("'\"")
+
+if os.getenv("LLM_API_KEY") and not os.getenv("GROQ_API_KEY"):
+    os.environ["GROQ_API_KEY"] = os.getenv("LLM_API_KEY")
+
 from collections import Counter
+from datetime import datetime
+import json
 from pathlib import Path
 from typing import Literal
+from uuid import uuid4
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from trustgraph.models import ContradictionPair, FactStatus, TrustMetadata, TrustScore
+from trustgraph.models import (
+    ContradictionPair,
+    FactStatus,
+    ResolutionEvent,
+    TrustMetadata,
+    TrustScore,
+)
 from trustgraph.trust_memory import TrustMemory
+from trustgraph.visualization import visualize_graph
 
 
 app = FastAPI(title="TrustGraph", version="1.0.0")
@@ -25,6 +56,9 @@ app.add_middleware(
 )
 
 memory = TrustMemory()
+DATA_DIR = Path("trustgraph/data")
+STATIC_DIR = Path(__file__).resolve().parent / "static"
+CHAT_SESSIONS_PATH = DATA_DIR / "chat_sessions.json"
 
 
 class StoreRequest(BaseModel):
@@ -36,6 +70,15 @@ class StoreRequest(BaseModel):
 class QueryRequest(BaseModel):
     query_text: str = Field(min_length=1)
     feedback_influence: float = Field(default=0.5, ge=0.0, le=1.0)
+
+
+class ChatMessageRequest(BaseModel):
+    content: str = Field(min_length=1)
+    feedback_influence: float = Field(default=0.5, ge=0.0, le=1.0)
+
+
+class ChatSessionCreateRequest(BaseModel):
+    title: str | None = None
 
 
 class ResolveRequest(BaseModel):
@@ -86,9 +129,22 @@ class GraphResponse(BaseModel):
     edges: list[GraphEdge]
 
 
+class ResolutionsResponse(BaseModel):
+    resolutions: list[ResolutionEvent]
+    total: int
+
+
 @app.get("/health")
 async def health() -> dict[str, str]:
     return {"status": "ok"}
+
+
+@app.get("/")
+async def index():
+    index_path = STATIC_DIR / "index.html"
+    if not index_path.exists():
+        raise HTTPException(status_code=404, detail="static/index.html not found")
+    return FileResponse(index_path)
 
 
 @app.post("/api/store")
@@ -107,6 +163,117 @@ async def query_memory(request: QueryRequest):
         feedback_influence=request.feedback_influence,
     )
     return result.model_dump(mode="json", exclude={"raw_results"})
+
+
+@app.post("/api/chat/sessions")
+async def create_chat_session(request: ChatSessionCreateRequest | None = None):
+    sessions = _load_chat_sessions()
+    now = datetime.utcnow().isoformat()
+    session_id = str(uuid4())
+    sessions[session_id] = {
+        "id": session_id,
+        "title": (request.title if request else None) or "New Chat",
+        "created_at": now,
+        "updated_at": now,
+        "messages": [],
+    }
+    _save_chat_sessions(sessions)
+    return sessions[session_id]
+
+
+@app.get("/api/chat/sessions")
+async def list_chat_sessions():
+    sessions = list(_load_chat_sessions().values())
+    sessions.sort(key=lambda item: item.get("updated_at", ""), reverse=True)
+    return {
+        "sessions": [
+            {
+                "id": item["id"],
+                "title": item.get("title") or "New Chat",
+                "created_at": item.get("created_at"),
+                "updated_at": item.get("updated_at"),
+                "message_count": len(item.get("messages", [])),
+            }
+            for item in sessions
+        ]
+    }
+
+
+@app.get("/api/chat/sessions/{session_id}")
+async def get_chat_session(session_id: str):
+    sessions = _load_chat_sessions()
+    if session_id not in sessions:
+        raise HTTPException(status_code=404, detail="Unknown chat session")
+    return sessions[session_id]
+
+
+@app.post("/api/chat/sessions/{session_id}/messages")
+async def append_chat_message(session_id: str, request: ChatMessageRequest):
+    sessions = _load_chat_sessions()
+    if session_id not in sessions:
+        raise HTTPException(status_code=404, detail="Unknown chat session")
+
+    now = datetime.utcnow().isoformat()
+    user_message = {
+        "id": str(uuid4()),
+        "role": "user",
+        "content": request.content,
+        "created_at": now,
+    }
+    sessions[session_id].setdefault("messages", []).append(user_message)
+
+    result = await memory.query(
+        request.content,
+        feedback_influence=request.feedback_influence,
+        session_id=session_id,
+    )
+    assistant_message = {
+        "id": str(uuid4()),
+        "role": "assistant",
+        "content": result.answer_text or "",
+        "created_at": datetime.utcnow().isoformat(),
+        "query": result.model_dump(mode="json", exclude={"raw_results"}),
+    }
+    sessions[session_id]["messages"].append(assistant_message)
+    sessions[session_id]["updated_at"] = assistant_message["created_at"]
+    if sessions[session_id].get("title") == "New Chat":
+        sessions[session_id]["title"] = request.content[:48]
+
+    _save_chat_sessions(sessions)
+    return {"session": sessions[session_id], "message": assistant_message}
+
+
+@app.post("/api/upload")
+async def upload_document(request: Request, filename: str = "document.txt"):
+    content_type = request.headers.get("content-type", "")
+    if content_type.startswith("multipart/"):
+        raise HTTPException(
+            status_code=415,
+            detail="Send the file as the raw request body with ?filename=name.txt",
+        )
+
+    body = await request.body()
+    if not body:
+        raise HTTPException(status_code=422, detail="Uploaded document is empty")
+    try:
+        text = body.decode("utf-8")
+    except UnicodeDecodeError as exc:
+        raise HTTPException(status_code=415, detail="Only UTF-8 text uploads are supported") from exc
+
+    result_cognee = None
+    import cognee
+    try:
+        result_cognee = await cognee.remember(text, self_improvement=True)
+    except Exception:
+        pass
+
+    result = await memory.store(text, source="document")
+    return {
+        "filename": filename,
+        "bytes": len(body),
+        "result": result.model_dump(mode="json"),
+        "cognee_result": str(result_cognee) if result_cognee else None,
+    }
 
 
 @app.get("/api/facts", response_model=FactsResponse)
@@ -128,6 +295,23 @@ async def list_facts() -> FactsResponse:
     )
 
 
+@app.get("/api/stats")
+async def get_stats():
+    facts = memory._load_facts()
+    counts = Counter(fact.status for fact in facts)
+    
+    # Get active contradictions
+    contradictions = await memory._active_contradictions(facts)
+    contradictions = _dedupe_contradictions(contradictions)
+    
+    return {
+        "activeFacts": counts[FactStatus.ACTIVE],
+        "contradictions": len(contradictions),
+        "decayedFacts": counts[FactStatus.DECAYED],
+        "totalMemorySize": len(facts),
+    }
+
+
 @app.get("/api/contradictions")
 async def list_contradictions():
     facts = memory._load_facts()
@@ -142,6 +326,13 @@ async def list_contradictions():
         "contradictions": [_contradiction_payload(pair) for pair in contradictions],
         "total": len(contradictions),
     }
+
+
+@app.get("/api/resolutions", response_model=ResolutionsResponse)
+async def list_resolutions() -> ResolutionsResponse:
+    resolutions = memory.load_resolutions()
+    resolutions.sort(key=lambda item: item.resolved_at, reverse=True)
+    return ResolutionsResponse(resolutions=resolutions, total=len(resolutions))
 
 
 @app.post("/api/resolve")
@@ -200,72 +391,16 @@ async def reset_memory():
     path = Path(memory.metadata_path)
     if path.exists():
         path.unlink()
+    history_path = Path(memory.history_path)
+    if history_path.exists():
+        history_path.unlink()
     return {"reset": True}
 
 
 @app.get("/api/graph", response_model=GraphResponse)
 async def graph_data() -> GraphResponse:
-    facts = memory._load_facts()
-    nodes_by_id: dict[str, GraphNode] = {}
-    edges = []
-
-    for fact in facts:
-        score = memory.scorer.score(fact, facts)
-        subject_id = f"subject:{fact.subject}"
-        nodes_by_id.setdefault(
-            subject_id,
-            GraphNode(
-                id=subject_id,
-                label=fact.subject,
-                node_type="subject",
-                trust=1.0,
-                source="trustgraph",
-                timestamp=fact.timestamp.isoformat(),
-                reinforcement_count=0,
-            ),
-        )
-        nodes_by_id[fact.fact_id] = GraphNode(
-            id=fact.fact_id,
-            label=fact.normalized_text,
-            node_type="fact",
-            trust=score.score,
-            status=fact.status,
-            source=fact.source,
-            timestamp=fact.timestamp.isoformat(),
-            reinforcement_count=fact.reinforcement_count,
-        )
-        edges.append(
-            GraphEdge(
-                source=subject_id,
-                target=fact.fact_id,
-                relation=fact.predicate,
-                weight=score.score,
-            )
-        )
-        if fact.contradiction_group:
-            contradiction_id = f"contradiction:{fact.contradiction_group}"
-            nodes_by_id.setdefault(
-                contradiction_id,
-                GraphNode(
-                    id=contradiction_id,
-                    label="Contradiction",
-                    node_type="contradiction",
-                    trust=0.0,
-                    source="trustgraph",
-                    timestamp=fact.timestamp.isoformat(),
-                    reinforcement_count=0,
-                ),
-            )
-            edges.append(
-                GraphEdge(
-                    source=fact.fact_id,
-                    target=contradiction_id,
-                    relation="contradicts",
-                    weight=1.0 - score.consistency_component,
-                )
-            )
-
-    return GraphResponse(nodes=list(nodes_by_id.values()), edges=edges)
+    payload = visualize_graph(memory.metadata_path)
+    return GraphResponse(nodes=payload["nodes"], edges=payload["edges"])
 
 
 def _contradiction_payload(pair: ContradictionPair) -> dict:
@@ -306,8 +441,11 @@ def _keep_both(contradiction_id: str) -> bool:
     facts = memory._load_facts()
     changed = False
 
+    ids = contradiction_id.split(":") if ":" in contradiction_id else []
+
     for fact in facts:
-        if fact.contradiction_group != contradiction_id:
+        is_in_group = fact.fact_id in ids if ids else fact.contradiction_group == contradiction_id
+        if not is_in_group:
             continue
         fact.status = FactStatus.ACTIVE
         fact.contradiction_group = None
@@ -315,4 +453,28 @@ def _keep_both(contradiction_id: str) -> bool:
 
     if changed:
         memory._save_facts(facts)
+        memory._append_resolution(
+            ResolutionEvent(
+                contradiction_id=contradiction_id,
+                action="keep_both",
+            )
+        )
     return changed
+
+
+def _load_chat_sessions() -> dict[str, dict]:
+    if not CHAT_SESSIONS_PATH.exists():
+        return {}
+    return json.loads(CHAT_SESSIONS_PATH.read_text(encoding="utf-8"))
+
+
+def _save_chat_sessions(sessions: dict[str, dict]) -> None:
+    CHAT_SESSIONS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    CHAT_SESSIONS_PATH.write_text(
+        json.dumps(sessions, indent=2),
+        encoding="utf-8",
+    )
+
+
+if STATIC_DIR.exists():
+    app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")

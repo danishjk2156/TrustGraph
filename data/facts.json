@@ -1,0 +1,62 @@
+[
+  {
+    "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+    "original_text": "hi how  are you",
+    "normalized_text": "hi how are you",
+    "subject": "hi how",
+    "predicate": "are",
+    "object_value": "you",
+    "timestamp": "2026-07-03T17:02:26.146139",
+    "reinforcement_count": 0,
+    "source": "chat",
+    "status": "active",
+    "contradiction_group": null,
+    "contradiction_explanation": null,
+    "cognee_data_id": null
+  },
+  {
+    "fact_id": "7d2862f3-08f1-4740-8de7-4c1c4d123074",
+    "original_text": "i am fine",
+    "normalized_text": "i am fine",
+    "subject": "statement",
+    "predicate": "says",
+    "object_value": "i am fine",
+    "timestamp": "2026-07-03T17:10:29.663299",
+    "reinforcement_count": 0,
+    "source": "chat",
+    "status": "resolved",
+    "contradiction_group": "90094d53-2116-42a2-9251-f639403f5007",
+    "contradiction_explanation": "Both facts describe statement.says but disagree: 'i am fine' vs \"what's up\".",
+    "cognee_data_id": null
+  },
+  {
+    "fact_id": "a87f29cf-bde0-4c74-8614-d0a87f77b9c8",
+    "original_text": "what's up",
+    "normalized_text": "what's up",
+    "subject": "statement",
+    "predicate": "says",
+    "object_value": "what's up",
+    "timestamp": "2026-07-03T17:11:00.904514",
+    "reinforcement_count": 1,
+    "source": "chat",
+    "status": "resolved",
+    "contradiction_group": "caeae560-eb3d-4720-8eaa-ab37d7fe629f",
+    "contradiction_explanation": "Both facts describe statement.says but disagree: \"what's up\" vs 'hi'.",
+    "cognee_data_id": null
+  },
+  {
+    "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+    "original_text": "hi",
+    "normalized_text": "hi",
+    "subject": "statement",
+    "predicate": "says",
+    "object_value": "hi",
+    "timestamp": "2026-07-03T19:17:26.242006",
+    "reinforcement_count": 1,
+    "source": "frontend",
+    "status": "active",
+    "contradiction_group": null,
+    "contradiction_explanation": "Both facts describe statement.says but disagree: \"what's up\" vs 'hi'.",
+    "cognee_data_id": null
+  }
+]

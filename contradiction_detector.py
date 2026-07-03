@@ -8,6 +8,7 @@ import re
 from uuid import uuid4
 
 from trustgraph.models import ContradictionPair, FactStatus, TrustMetadata
+from trustgraph.prompts import CONTRADICTION_DETECTION_PROMPT
 from trustgraph.trust_scorer import TrustScorer
 
 
@@ -38,6 +39,15 @@ async def detect_contradictions(
 
         trust_new = scorer.score(new_fact, existing_facts).score
         trust_existing = scorer.score(existing, existing_facts + [new_fact]).score
+        explanation = (
+            f"Both facts describe {new_fact.subject}.{new_fact.predicate} "
+            f"but disagree: {existing.object_value!r} vs "
+            f"{new_fact.object_value!r}."
+        )
+        existing.contradiction_explanation = explanation
+        if not new_fact.contradiction_explanation:
+            new_fact.contradiction_explanation = explanation
+
         contradictions.append(
             ContradictionPair(
                 fact_a=existing,
@@ -46,11 +56,7 @@ async def detect_contradictions(
                 trust_b=trust_new,
                 subject=new_fact.subject,
                 predicate=new_fact.predicate,
-                explanation=(
-                    f"Both facts describe {new_fact.subject}.{new_fact.predicate} "
-                    f"but disagree: {existing.object_value!r} vs "
-                    f"{new_fact.object_value!r}."
-                ),
+                explanation=explanation,
             )
         )
         exact_ids.add(existing.fact_id)
@@ -84,9 +90,17 @@ async def _detect_semantic_contradictions(
 
     contradictions: list[ContradictionPair] = []
     for existing in candidates:
-        explanation = await _llm_contradiction_explanation(existing, new_fact)
-        if not explanation:
-            continue
+        if (
+            new_fact.contradiction_group is not None
+            and existing.contradiction_group == new_fact.contradiction_group
+        ):
+            explanation = existing.contradiction_explanation or "The facts semantically conflict."
+        else:
+            explanation = await _llm_contradiction_explanation(existing, new_fact)
+            if not explanation:
+                continue
+            existing.contradiction_explanation = explanation
+            new_fact.contradiction_explanation = explanation
 
         contradictions.append(
             ContradictionPair(
@@ -127,10 +141,7 @@ async def _llm_contradiction_explanation(
             messages=[
                 {
                     "role": "system",
-                    "content": (
-                        "Decide if two facts contradict. Return only JSON: "
-                        "{\"contradicts\": true|false, \"explanation\": \"...\"}."
-                    ),
+                    "content": CONTRADICTION_DETECTION_PROMPT,
                 },
                 {
                     "role": "user",
@@ -152,7 +163,11 @@ async def _llm_contradiction_explanation(
 
 
 def _model_name() -> str | None:
-    return os.getenv("LITELLM_MODEL") or os.getenv("LLM_MODEL") or os.getenv("MODEL")
+    model = os.getenv("LITELLM_MODEL") or os.getenv("LLM_MODEL") or os.getenv("MODEL")
+    if model and "groq" in model.lower() and not os.getenv("GROQ_API_KEY"):
+        if os.getenv("LLM_API_KEY"):
+            os.environ["GROQ_API_KEY"] = os.getenv("LLM_API_KEY")
+    return model
 
 
 def _json_object(content: str) -> str:

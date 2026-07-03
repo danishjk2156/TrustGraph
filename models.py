@@ -28,6 +28,7 @@ class TrustMetadata(BaseModel):
     source: str = "user"
     status: FactStatus = FactStatus.ACTIVE
     contradiction_group: Optional[str] = None
+    contradiction_explanation: Optional[str] = None
     cognee_data_id: Optional[str] = None
 
 
@@ -68,6 +69,7 @@ class StoreResult(BaseModel):
     """Result returned after storing text in trust-aware memory."""
 
     stored_facts: list[TrustMetadata]
+    reinforced_facts: list[TrustMetadata] = Field(default_factory=list)
     contradictions: list[ContradictionPair] = Field(default_factory=list)
 
 
@@ -76,5 +78,19 @@ class QueryResult(BaseModel):
 
     query_text: str
     ranked_facts: list[RankedFact]
+    answer_text: str | None = None
+    web_results: list[dict[str, str]] = Field(default_factory=list)
     contradictions: list[ContradictionPair] = Field(default_factory=list)
     raw_results: list[Any] = Field(default_factory=list)
+
+
+class ResolutionEvent(BaseModel):
+    """Audit entry for a contradiction resolution."""
+
+    contradiction_id: str
+    resolved_at: datetime = Field(default_factory=datetime.utcnow)
+    action: str
+    winner_id: Optional[str] = None
+    winner_text: Optional[str] = None
+    loser_ids: list[str] = Field(default_factory=list)
+    loser_texts: list[str] = Field(default_factory=list)

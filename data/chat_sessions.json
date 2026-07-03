@@ -1,0 +1,836 @@
+{
+  "ad392790-75d8-4eb2-bbbd-6a082a083d53": {
+    "id": "ad392790-75d8-4eb2-bbbd-6a082a083d53",
+    "title": "hi",
+    "created_at": "2026-07-03T18:27:17.522988",
+    "updated_at": "2026-07-03T18:38:40.635438",
+    "messages": [
+      {
+        "id": "21c6af86-ab04-4b31-ad34-4db836c31a0c",
+        "role": "user",
+        "content": "hi",
+        "created_at": "2026-07-03T18:27:24.390407"
+      },
+      {
+        "id": "6d3c67a4-8be2-4469-948e-55a6ec2ad005",
+        "role": "assistant",
+        "content": "hi how are you. Trust: 0.65 | Reinforced 0x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: HI | English meaning - Cambridge Dictionary (https://dictionary.cambridge.org/dictionary/english/hi); HI Definition & Meaning - Merriam-Webster (https://www.merriam-webster.com/dictionary/hi); Hi, Hello Song! Greeting Song for Kids | Preschool Songs | A Little ... (https://www.youtube.com/watch?v=T-wvRTDieGQ)",
+        "created_at": "2026-07-03T18:27:26.901249",
+        "query": {
+          "query_text": "hi",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "original_text": "hi how  are you",
+                "normalized_text": "hi how are you",
+                "subject": "hi how",
+                "predicate": "are",
+                "object_value": "you",
+                "timestamp": "2026-07-03T17:02:26.146139",
+                "reinforcement_count": 0,
+                "source": "chat",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "score": 0.6476466513003465,
+                "recency_component": 0.994116628250866,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.99, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "hi how are you. Trust: 0.65 | Reinforced 0x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: HI | English meaning - Cambridge Dictionary (https://dictionary.cambridge.org/dictionary/english/hi); HI Definition & Meaning - Merriam-Webster (https://www.merriam-webster.com/dictionary/hi); Hi, Hello Song! Greeting Song for Kids | Preschool Songs | A Little ... (https://www.youtube.com/watch?v=T-wvRTDieGQ)",
+          "web_results": [
+            {
+              "title": "HI | English meaning - Cambridge Dictionary",
+              "snippet": "HI definition: 1. used as an informal greeting, usually to people who you know: 2. written abbreviation for the\u2026. Learn more.",
+              "url": "https://dictionary.cambridge.org/dictionary/english/hi"
+            },
+            {
+              "title": "HI Definition & Meaning - Merriam-Webster",
+              "snippet": "The meaning of HI is \u2014used especially as a greeting. How to use hi in a sentence.",
+              "url": "https://www.merriam-webster.com/dictionary/hi"
+            },
+            {
+              "title": "Hi, Hello Song! Greeting Song for Kids | Preschool Songs | A Little ...",
+              "snippet": "Perfect song for morning greetings! This song is perfect for both native English speakers and young learners of English as a second language.Lyrics:Hi, Hello...",
+              "url": "https://www.youtube.com/watch?v=T-wvRTDieGQ"
+            },
+            {
+              "title": "Hi Meaning - YouTube",
+              "snippet": "Video shows what hi means. A friendly, informal, casual greeting said when meeting someone.. An exclamation to call attention.. hi synonyms: greeting, hello....",
+              "url": "https://www.youtube.com/watch?v=5aJPNHnkwjw"
+            },
+            {
+              "title": "Hi: Definition, Meaning, and Examples - US Dictionary",
+              "snippet": "What is the meaning and origin of the word \" hi \"? Learn how this word has been used to greet and express interest in others.",
+              "url": "https://usdictionary.com/definitions/hi/"
+            },
+            {
+              "title": "HI Simple Definition - Merriam-Webster",
+              "snippet": "The simple definition of HI is \u2014used as an informal way of saying 'hello'.",
+              "url": "https://www.merriam-webster.com/simple/hi"
+            },
+            {
+              "title": "Hi Definition & Meaning | YourDictionary",
+              "snippet": "Hi definition: Used to express greeting. Origin of Hi American English (first recorded reference is to speech of a Kansas Indian), originally to attract attention, probably a variant of Middle English hy, hey (circa 1475) also an exclamation to call attention. From Wiktionary",
+              "url": "https://www.yourdictionary.com/hi"
+            },
+            {
+              "title": "The Meaning and Use of \"Hi\" in English: A Comprehensive Guide",
+              "snippet": "In daily life and digital communication, greetings serve as an essential way to initiate conversation and establish rapport. Among the many greetings in English, \" hi \" stands out as a simple, friendly, and widely used word. But what exactly does \" hi \" mean, how did it originate, and how is it properly used? In this comprehensive guide, we will explore the origins, appropriate contexts, cultural ...",
+              "url": "https://theenglishtoday.com/the-meaning-and-use-of-hi-in-english-a-comprehensive-guide/"
+            },
+            {
+              "title": "Hi.AI for Android - Download the APK from Uptodown",
+              "snippet": "Download the APK of Hi .AI for Android for free. Enjoy conversations with AI characters. Hi .AI is an app that allows you to engage in conversations with all...",
+              "url": "https://hi-ai.en.uptodown.com/android"
+            },
+            {
+              "title": "Different Ways to Say Hello in English and How to Respond",
+              "snippet": "Hellllooooo! Hi ! What's up? There are so many different ways to greet someone in English and start a conversation. Hello is the most common, but if you want a different word or phrase, well, keep reading!",
+              "url": "https://blog.duolingo.com/hello-in-english/"
+            }
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "00c15ee9-6b9b-4907-88ab-a62e7987ecdb",
+        "role": "user",
+        "content": "hi",
+        "created_at": "2026-07-03T18:38:40.629727"
+      },
+      {
+        "id": "01a3e863-a2a4-4bda-87ee-f438e402bc5f",
+        "role": "assistant",
+        "content": "hi how are you. Trust: 0.65 | Reinforced 0x | no contradictions\n\nWeb Verification: No web results were available.",
+        "created_at": "2026-07-03T18:38:40.635438",
+        "query": {
+          "query_text": "hi",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "original_text": "hi how  are you",
+                "normalized_text": "hi how are you",
+                "subject": "hi how",
+                "predicate": "are",
+                "object_value": "you",
+                "timestamp": "2026-07-03T17:02:26.146139",
+                "reinforcement_count": 0,
+                "source": "chat",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "score": 0.6473355396138629,
+                "recency_component": 0.9933388490346573,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.99, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "hi how are you. Trust: 0.65 | Reinforced 0x | no contradictions\n\nWeb Verification: No web results were available.",
+          "web_results": [],
+          "contradictions": []
+        }
+      }
+    ]
+  },
+  "318ce5b6-995a-4dd9-9f11-e790d150f42e": {
+    "id": "318ce5b6-995a-4dd9-9f11-e790d150f42e",
+    "title": "New Chat",
+    "created_at": "2026-07-03T19:29:57.284162",
+    "updated_at": "2026-07-03T19:29:57.284162",
+    "messages": []
+  },
+  "a2b85309-54d5-4010-8a57-521471f22b09": {
+    "id": "a2b85309-54d5-4010-8a57-521471f22b09",
+    "title": "hi",
+    "created_at": "2026-07-03T19:29:57.355530",
+    "updated_at": "2026-07-03T19:54:38.290189",
+    "messages": [
+      {
+        "id": "b6c0d73c-4b7c-4d1a-be2a-ca2e7fc58d2f",
+        "role": "user",
+        "content": "hi",
+        "created_at": "2026-07-03T19:30:02.563453"
+      },
+      {
+        "id": "8acb7f93-2482-4e0a-bf76-0b671c773712",
+        "role": "assistant",
+        "content": "hi. Trust: 0.79 | Reinforced 1x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: HI | English meaning - Cambridge Dictionary (https://dictionary.cambridge.org/dictionary/english/hi); HI Definition & Meaning - Merriam-Webster (https://www.merriam-webster.com/dictionary/hi); Hi, Hello Song! Greeting Song for Kids | Preschool Songs | A Little ... (https://www.youtube.com/watch?v=T-wvRTDieGQ)",
+        "created_at": "2026-07-03T19:30:04.901629",
+        "query": {
+          "query_text": "hi",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+                "original_text": "hi",
+                "normalized_text": "hi",
+                "subject": "statement",
+                "predicate": "says",
+                "object_value": "hi",
+                "timestamp": "2026-07-03T19:17:26.242006",
+                "reinforcement_count": 1,
+                "source": "frontend",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": "Both facts describe statement.says but disagree: \"what's up\" vs 'hi'.",
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+                "score": 0.7873642711131973,
+                "recency_component": 0.9991250050315474,
+                "reinforcement_component": 0.3934693402873666,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.39, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "original_text": "hi how  are you",
+                "normalized_text": "hi how are you",
+                "subject": "hi how",
+                "predicate": "are",
+                "object_value": "you",
+                "timestamp": "2026-07-03T17:02:26.146139",
+                "reinforcement_count": 0,
+                "source": "chat",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "score": 0.6459207473025461,
+                "recency_component": 0.9898018682563654,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.99, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "hi. Trust: 0.79 | Reinforced 1x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: HI | English meaning - Cambridge Dictionary (https://dictionary.cambridge.org/dictionary/english/hi); HI Definition & Meaning - Merriam-Webster (https://www.merriam-webster.com/dictionary/hi); Hi, Hello Song! Greeting Song for Kids | Preschool Songs | A Little ... (https://www.youtube.com/watch?v=T-wvRTDieGQ)",
+          "web_results": [
+            {
+              "title": "HI | English meaning - Cambridge Dictionary",
+              "snippet": "HI definition: 1. used as an informal greeting, usually to people who you know: 2. written abbreviation for the\u2026. Learn more.",
+              "url": "https://dictionary.cambridge.org/dictionary/english/hi"
+            },
+            {
+              "title": "HI Definition & Meaning - Merriam-Webster",
+              "snippet": "The meaning of HI is \u2014used especially as a greeting. How to use hi in a sentence.",
+              "url": "https://www.merriam-webster.com/dictionary/hi"
+            },
+            {
+              "title": "Hi, Hello Song! Greeting Song for Kids | Preschool Songs | A Little ...",
+              "snippet": "Perfect song for morning greetings! This song is perfect for both native English speakers and young learners of English as a second language.Lyrics:Hi, Hello...",
+              "url": "https://www.youtube.com/watch?v=T-wvRTDieGQ"
+            },
+            {
+              "title": "Hi Meaning - YouTube",
+              "snippet": "Video shows what hi means. A friendly, informal, casual greeting said when meeting someone.. An exclamation to call attention.. hi synonyms: greeting, hello....",
+              "url": "https://www.youtube.com/watch?v=5aJPNHnkwjw"
+            },
+            {
+              "title": "Hi: Definition, Meaning, and Examples - US Dictionary",
+              "snippet": "What is the meaning and origin of the word \" hi \"? Learn how this word has been used to greet and express interest in others.",
+              "url": "https://usdictionary.com/definitions/hi/"
+            },
+            {
+              "title": "HI Simple Definition - Merriam-Webster",
+              "snippet": "The simple definition of HI is \u2014used as an informal way of saying 'hello'.",
+              "url": "https://www.merriam-webster.com/simple/hi"
+            },
+            {
+              "title": "Hi Definition & Meaning | YourDictionary",
+              "snippet": "Hi definition: Used to express greeting. Origin of Hi American English (first recorded reference is to speech of a Kansas Indian), originally to attract attention, probably a variant of Middle English hy, hey (circa 1475) also an exclamation to call attention. From Wiktionary",
+              "url": "https://www.yourdictionary.com/hi"
+            },
+            {
+              "title": "The Meaning and Use of \"Hi\" in English: A Comprehensive Guide",
+              "snippet": "In daily life and digital communication, greetings serve as an essential way to initiate conversation and establish rapport. Among the many greetings in English, \" hi \" stands out as a simple, friendly, and widely used word. But what exactly does \" hi \" mean, how did it originate, and how is it properly used? In this comprehensive guide, we will explore the origins, appropriate contexts, cultural ...",
+              "url": "https://theenglishtoday.com/the-meaning-and-use-of-hi-in-english-a-comprehensive-guide/"
+            },
+            {
+              "title": "Different Ways to Say Hello in English and How to Respond",
+              "snippet": "Hellllooooo! Hi ! What's up? There are so many different ways to greet someone in English and start a conversation. Hello is the most common, but if you want a different word or phrase, well, keep reading!",
+              "url": "https://blog.duolingo.com/hello-in-english/"
+            },
+            {
+              "title": "Hi.AI for Android - Download the APK from Uptodown",
+              "snippet": "Download the APK of Hi .AI for Android for free. Enjoy conversations with AI characters. Hi .AI is an app that allows you to engage in conversations with all...",
+              "url": "https://hi-ai.en.uptodown.com/android"
+            }
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "62b617e9-2afe-47c9-b120-16690e405085",
+        "role": "user",
+        "content": "how are you",
+        "created_at": "2026-07-03T19:30:26.868586"
+      },
+      {
+        "id": "8a4f755f-c82a-4789-9507-2085cb7a6153",
+        "role": "assistant",
+        "content": "hi how are you. Trust: 0.65 | Reinforced 0x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: \"How are you?\" | 60+ Different Ways to Ask & Respond to \"How are you?\" (https://eslforums.com/how-are-you/); 30 Other Ways to Say 'How Are You' (With Examples) (https://grammarheist.com/other-ways-to-say-how-are-you/); 100 Common Responses to \"How Are You?\" - Home of English Grammar (https://www.englishgrammar.org/common-responses-how-are-you/)",
+        "created_at": "2026-07-03T19:30:29.216962",
+        "query": {
+          "query_text": "how are you",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "original_text": "hi how  are you",
+                "normalized_text": "hi how are you",
+                "subject": "hi how",
+                "predicate": "are",
+                "object_value": "you",
+                "timestamp": "2026-07-03T17:02:26.146139",
+                "reinforcement_count": 0,
+                "source": "chat",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "score": 0.6459096121936153,
+                "recency_component": 0.9897740304840382,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.99, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "hi how are you. Trust: 0.65 | Reinforced 0x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: \"How are you?\" | 60+ Different Ways to Ask & Respond to \"How are you?\" (https://eslforums.com/how-are-you/); 30 Other Ways to Say 'How Are You' (With Examples) (https://grammarheist.com/other-ways-to-say-how-are-you/); 100 Common Responses to \"How Are You?\" - Home of English Grammar (https://www.englishgrammar.org/common-responses-how-are-you/)",
+          "web_results": [
+            {
+              "title": "\"How are you?\" | 60+ Different Ways to Ask & Respond to \"How are you?\"",
+              "snippet": "However, you can also use the question as a simple greeting and move on to a different topic of conversation. Ways to Ask \" How are you ?\" To ask \" how are you ?\", you can use any of the phrases I provided in my previous responses. Some examples include \" How are you doing?\", \" How are you feeling?\", and \"What's been going on?\".",
+              "url": "https://eslforums.com/how-are-you/"
+            },
+            {
+              "title": "30 Other Ways to Say 'How Are You' (With Examples)",
+              "snippet": "Discover fresh, friendly other ways to say how are you that add warmth and meaning to conversations. Upgrade your greetings today. Try it!..",
+              "url": "https://grammarheist.com/other-ways-to-say-how-are-you/"
+            },
+            {
+              "title": "100 Common Responses to \"How Are You?\" - Home of English Grammar",
+              "snippet": "Stuck on how to answer \" How are you ?\"? Get 100 common responses, from casual to professional, plus friendly options for any mood or moment.",
+              "url": "https://www.englishgrammar.org/common-responses-how-are-you/"
+            },
+            {
+              "title": "How Are You? 50+ Ways to Ask and Answer in English",
+              "snippet": "Are you bored with saying \" How are you ?\" Don't worry, let's try out other interesting ways instead. Below is the list of common ways to say and response to How are you ? in English.",
+              "url": "https://eslbuzz.com/different-ways-to-say-and-response-to-how-are-you-in-english/"
+            },
+            {
+              "title": "How to Ask \"How Are You?\" in English #LearnEnglish #SpeakEnglish",
+              "snippet": "Learn 4 natural ways to ask how someone's doing in English\u2014formal, informal, polite, and casual! \ud83d\udcac Perfect for work, friends, or daily conversations. Master...",
+              "url": "https://www.youtube.com/watch?v=JD5-s4zz9jo"
+            },
+            {
+              "title": "22 Other Ways to Ask \"How Are You?\" (Casual and Formal)",
+              "snippet": "Plus, the best ways to reply politelyThere are many different ways to greet a friend you haven't seen for a while. It probably feels very natural to start with, \"Hey! How are you ?\" However, are there more creative or interesting ways to...",
+              "url": "https://www.wikihow.com/Say-How-Are-You"
+            },
+            {
+              "title": "50+ Ways to Respond to \"How Are You?\" in English - 7ESL",
+              "snippet": "Master diverse and situational responses to \" How are you?\"\u2014from formal to funny, idiomatic to professional\u2014making sure you convey the perfect message every time.",
+              "url": "https://7esl.com/answer-how-are-you/"
+            },
+            {
+              "title": "10 Better Ways to Say \"How Are You?\" | Speak Natural ... - YouTube",
+              "snippet": "Tired of always saying \" How are you ?\" Learn 10 natural and friendly alternatives that native English speakers actually use in real conversations. Whether you ...",
+              "url": "https://www.youtube.com/watch?v=z4XLaC52eGw"
+            },
+            {
+              "title": "50+ Ways to Ask \"How Are You\" in English: From Formal to Idioms",
+              "snippet": "Learn 50+ ways to ask how someone is doing \u2014 formal, informal, professional, idiomatic, and funny \u2014 with dialogues, register notes, and when to use each.",
+              "url": "https://eslbuzz.com/how-are-you/"
+            },
+            {
+              "title": "40+ Ways to Ask How Are You in English - yakyacker.com",
+              "snippet": "Ways to ask how are you in English with natural alternatives, examples, and conversation-friendly phrases.",
+              "url": "https://yakyacker.com/learn-english/how-are-you-in-english/"
+            }
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "26378bc6-5cf3-48a3-9216-5dd0d2a4a598",
+        "role": "user",
+        "content": "what are you",
+        "created_at": "2026-07-03T19:54:26.293498"
+      },
+      {
+        "id": "c3b558fe-e19f-47b4-ac4d-1c0e6ffd6512",
+        "role": "assistant",
+        "content": "hi how are you. Trust: 0.65 | Reinforced 0x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: YouTube (https://www.youtube.com/); Who Are You vs. What Are You? Most People Get This ... - YouTube (https://www.youtube.com/watch?v=cCat6AvISg4); How to answer when someone asks \"What are you?\" - LinkedIn (https://www.linkedin.com/pulse/how-answer-when-someone-asks-what-you-dija-renuka)",
+        "created_at": "2026-07-03T19:54:27.502531",
+        "query": {
+          "query_text": "what are you",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "original_text": "hi how  are you",
+                "normalized_text": "hi how are you",
+                "subject": "hi how",
+                "predicate": "are",
+                "object_value": "you",
+                "timestamp": "2026-07-03T17:02:26.146139",
+                "reinforcement_count": 0,
+                "source": "chat",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "score": 0.6452505736531362,
+                "recency_component": 0.9881264341328404,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.99, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "hi how are you. Trust: 0.65 | Reinforced 0x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: YouTube (https://www.youtube.com/); Who Are You vs. What Are You? Most People Get This ... - YouTube (https://www.youtube.com/watch?v=cCat6AvISg4); How to answer when someone asks \"What are you?\" - LinkedIn (https://www.linkedin.com/pulse/how-answer-when-someone-asks-what-you-dija-renuka)",
+          "web_results": [
+            {
+              "title": "YouTube",
+              "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+              "url": "https://www.youtube.com/"
+            },
+            {
+              "title": "Who Are You vs. What Are You? Most People Get This ... - YouTube",
+              "snippet": "\ud83d\udd39 Who Are You vs. What Are You ? \ud83d\udd39 | English Grammar Explained! \ud83d\ude80Ever wondered about the difference between \"Who are you ?\" and \" What are you ?\"? \ud83e\udd14 These tw...",
+              "url": "https://www.youtube.com/watch?v=cCat6AvISg4"
+            },
+            {
+              "title": "How to answer when someone asks \"What are you?\" - LinkedIn",
+              "snippet": "Do you remember when I mentioned how as a child I loved to answer the question because it gave me a chance to share my love for my heritage with others? Well as an adult you can use it for your ...",
+              "url": "https://www.linkedin.com/pulse/how-answer-when-someone-asks-what-you-dija-renuka"
+            },
+            {
+              "title": "What Does \"What Are You Talking About\" Mean? (With Examples)",
+              "snippet": "While talking with friends, reading books, or watching movies, you might hear people say, \" What are you talking about?\" This idiomatic phrase is usually used to express shock or displeasure about something someone said. You can also say it when you're confused to ask someone to explain what they meant. In this article, we'll go over what this phrase means, when it's appropriate to ...",
+              "url": "https://www.wikihow.com/What-Are-You-Talking-About"
+            },
+            {
+              "title": "\"What Are You Up To?\" Meanings & How to Answer - wikiHow",
+              "snippet": "The various meanings of 'What are you up to?\" and sample responses for any situation\"What are you up to?\" is something you'll hear almost as often as a regular \"Hello,\" but its meaning can change depending on who's asking. How can you know...",
+              "url": "https://www.wikihow.com/What-Are-You-Up-to"
+            },
+            {
+              "title": "How to answer when someone asks \"What are you?\" - by Dija",
+              "snippet": "Also, if you get to know me, I promise you'll feel inspired to go after your dreams after spending time with me. You have so much that comes with being you . Your passions, your dreams, your hopes, your aspirations. I could go on and on about how beautifully complex and interesting it is to be a human being.",
+              "url": "https://dijarenuka.substack.com/p/how-to-answer-when-someone-asks-what"
+            },
+            {
+              "title": "what are you or What're you?? - TextRanch",
+              "snippet": "Learn the correct usage of \" what are you \" and \"What're you ?\" in English. Discover differences, examples, alternatives and tips for choosing the right phrase.",
+              "url": "https://textranch.com/c/what-are-you-or-whatre-you/"
+            },
+            {
+              "title": "What is the difference between \"What are you?\" and \"Who are you?\"?",
+              "snippet": "I am often asked \"Who are you ?\" and \" What are you ?\", but I don't know the difference between these two questions. Please explain it to me.",
+              "url": "https://ell.stackexchange.com/questions/71824/what-is-the-difference-between-what-are-you-and-who-are-you"
+            },
+            {
+              "title": "25+ Nice Ways to Ask and Respond to \"What Are You Doing ... - 7ESL",
+              "snippet": "Discover various ways to ask \" What are you doing?\" including common, idiomatic expressions, and tips for using them in both formal and informal scenarios.",
+              "url": "https://7esl.com/what-are-you-doing/"
+            },
+            {
+              "title": "What is the meaning of \"What are you?\"? - Question about ... - HiNative",
+              "snippet": "Definition of What are you ? This question can be both formal and informal. For example, if you're talking to a Harry Potter fan and they ask you \" What are you \", they mean what house do you belong in. Another example is that when you're talking to high school students and they ask \" what are you \", your answer might be \"I'm a freshman\" or \"I'm a sophomore\" |It would depend ...",
+              "url": "https://hinative.com/questions/16098776"
+            }
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "515e1e6d-1bfe-4983-a898-d5d598316bc9",
+        "role": "user",
+        "content": "what",
+        "created_at": "2026-07-03T19:54:36.112965"
+      },
+      {
+        "id": "a1fc4d5c-0d8a-4c9b-9366-cf4bfb6ef470",
+        "role": "assistant",
+        "content": "hi. Trust: 0.79 | Reinforced 1x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: WhatsApp Web (https://web.whatsapp.com/); WhatsApp | Secure and Reliable Free Private Messaging and Calling (https://www.whatsapp.com/); WhatsApp (https://wa.me/)",
+        "created_at": "2026-07-03T19:54:38.290189",
+        "query": {
+          "query_text": "what",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+                "original_text": "hi",
+                "normalized_text": "hi",
+                "subject": "statement",
+                "predicate": "says",
+                "object_value": "hi",
+                "timestamp": "2026-07-03T19:17:26.242006",
+                "reinforcement_count": 1,
+                "source": "frontend",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": "Both facts describe statement.says but disagree: \"what's up\" vs 'hi'.",
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+                "score": 0.7866832520025685,
+                "recency_component": 0.9974224572549756,
+                "reinforcement_component": 0.3934693402873666,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.39, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "original_text": "hi how  are you",
+                "normalized_text": "hi how are you",
+                "subject": "hi how",
+                "predicate": "are",
+                "object_value": "you",
+                "timestamp": "2026-07-03T17:02:26.146139",
+                "reinforcement_count": 0,
+                "source": "chat",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "score": 0.6452460829866458,
+                "recency_component": 0.9881152074666143,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.99, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "hi. Trust: 0.79 | Reinforced 1x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: WhatsApp Web (https://web.whatsapp.com/); WhatsApp | Secure and Reliable Free Private Messaging and Calling (https://www.whatsapp.com/); WhatsApp (https://wa.me/)",
+          "web_results": [
+            {
+              "title": "WhatsApp Web",
+              "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with ease, all for free.",
+              "url": "https://web.whatsapp.com/"
+            },
+            {
+              "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+              "snippet": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging and calling, available on phones all over the world.",
+              "url": "https://www.whatsapp.com/"
+            },
+            {
+              "title": "WhatsApp",
+              "snippet": "Hosted by WhatsApp 2026 \u00a9 WhatsApp LLC Privacy & Terms",
+              "url": "https://wa.me/"
+            },
+            {
+              "title": "WhatsApp Messenger - Apps on Google Play",
+              "snippet": "Simple. Reliable. Private. WhatsApp from Meta is a FREE messaging and video calling app. It's used by over 2B people in more than 180 countries. It's simple, reliable, and private, so you can easily keep in touch with your friends and family. WhatsApp works across mobile and desktop even on slow connections, with no subscription fees*. Private messaging across the world Your personal ...",
+              "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=en"
+            },
+            {
+              "title": "WHAT Definition & Meaning - Merriam-Webster",
+              "snippet": "The meaning of WHAT is \u2014used as an interrogative expressing inquiry about the identity, nature, or value of an object or matter. How to use what in a sentence.",
+              "url": "https://www.merriam-webster.com/dictionary/what"
+            },
+            {
+              "title": "WhatsApp Messenger - App Store",
+              "snippet": "Download WhatsApp Messenger by WhatsApp Inc. on the App Store. See screenshots, ratings and reviews, user tips, and more apps like WhatsApp Messenger.",
+              "url": "https://apps.apple.com/us/app/whatsapp-messenger/id310633997"
+            },
+            {
+              "title": "Meanings & Definitions of English Words | Dictionary.com",
+              "snippet": "The world's leading online dictionary: English definitions, synonyms, word origins, example sentences, word games, and more. A trusted authority for 25+ years!",
+              "url": "https://www.dictionary.com/"
+            },
+            {
+              "title": "Merriam-Webster: America's Most Trusted Dictionary",
+              "snippet": "Find definitions for over 300,000 words from the most authoritative English dictionary. Continuously updated with new words and meanings.",
+              "url": "https://www.merriam-webster.com/"
+            },
+            {
+              "title": "what - Wiktionary, the free dictionary",
+              "snippet": "A diploma in the waiting room revealed Big Boy to be a member of The American Association of Medical Hydrology, whatever that might be. Furthermore he was a deacon of the Royal Aryan Society for Positive Christianity and as such was privileged to throw in divine healing without extra charge. That went right along with the three-dollar treatment for a touch of the astral power and a short ...",
+              "url": "https://en.wiktionary.org/wiki/what"
+            },
+            {
+              "title": "WHAT | English meaning - Cambridge Dictionary",
+              "snippet": "WHAT definition: 1. used to ask for information about people or things: 2. used in questions that show you are\u2026. Learn more.",
+              "url": "https://dictionary.cambridge.org/dictionary/english/what"
+            }
+          ],
+          "contradictions": []
+        }
+      }
+    ]
+  },
+  "581eb7f5-5fee-4bbb-bb78-188d99f33021": {
+    "id": "581eb7f5-5fee-4bbb-bb78-188d99f33021",
+    "title": "hi",
+    "created_at": "2026-07-03T19:58:10.410086",
+    "updated_at": "2026-07-03T20:01:11.466529",
+    "messages": [
+      {
+        "id": "0c56d518-4f27-4c57-9723-3ad4c0bcba8c",
+        "role": "user",
+        "content": "hi",
+        "created_at": "2026-07-03T20:01:01.436357"
+      },
+      {
+        "id": "0583d83b-4264-4a57-9a7e-ab118e632349",
+        "role": "assistant",
+        "content": "hi. Trust: 0.79 | Reinforced 1x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: HI | English meaning - Cambridge Dictionary (https://dictionary.cambridge.org/dictionary/english/hi); HI Definition & Meaning - Merriam-Webster (https://www.merriam-webster.com/dictionary/hi); Hi Meaning - YouTube (https://www.youtube.com/watch?v=5aJPNHnkwjw)",
+        "created_at": "2026-07-03T20:01:03.479503",
+        "query": {
+          "query_text": "hi",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+                "original_text": "hi",
+                "normalized_text": "hi",
+                "subject": "statement",
+                "predicate": "says",
+                "object_value": "hi",
+                "timestamp": "2026-07-03T19:17:26.242006",
+                "reinforcement_count": 1,
+                "source": "frontend",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": "Both facts describe statement.says but disagree: \"what's up\" vs 'hi'.",
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+                "score": 0.7865053605626797,
+                "recency_component": 0.9969777286552535,
+                "reinforcement_component": 0.3934693402873666,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.39, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "original_text": "hi how  are you",
+                "normalized_text": "hi how are you",
+                "subject": "hi how",
+                "predicate": "are",
+                "object_value": "you",
+                "timestamp": "2026-07-03T17:02:26.146139",
+                "reinforcement_count": 0,
+                "source": "chat",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "score": 0.6450698515054376,
+                "recency_component": 0.9876746287635939,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.99, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "hi. Trust: 0.79 | Reinforced 1x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: HI | English meaning - Cambridge Dictionary (https://dictionary.cambridge.org/dictionary/english/hi); HI Definition & Meaning - Merriam-Webster (https://www.merriam-webster.com/dictionary/hi); Hi Meaning - YouTube (https://www.youtube.com/watch?v=5aJPNHnkwjw)",
+          "web_results": [
+            {
+              "title": "HI | English meaning - Cambridge Dictionary",
+              "snippet": "HI definition: 1. used as an informal greeting, usually to people who you know: 2. written abbreviation for the\u2026. Learn more.",
+              "url": "https://dictionary.cambridge.org/dictionary/english/hi"
+            },
+            {
+              "title": "HI Definition & Meaning - Merriam-Webster",
+              "snippet": "The meaning of HI is \u2014used especially as a greeting. How to use hi in a sentence.",
+              "url": "https://www.merriam-webster.com/dictionary/hi"
+            },
+            {
+              "title": "Hi Meaning - YouTube",
+              "snippet": "Video shows what hi means. A friendly, informal, casual greeting said when meeting someone.. An exclamation to call attention.. hi synonyms: greeting, hello....",
+              "url": "https://www.youtube.com/watch?v=5aJPNHnkwjw"
+            },
+            {
+              "title": "Hi Definition & Meaning | YourDictionary",
+              "snippet": "Hi definition: Used to express greeting. Origin of Hi American English (first recorded reference is to speech of a Kansas Indian), originally to attract attention, probably a variant of Middle English hy, hey (circa 1475) also an exclamation to call attention. From Wiktionary",
+              "url": "https://www.yourdictionary.com/hi"
+            },
+            {
+              "title": "How to Pronounce 'Hi' - YouTube",
+              "snippet": "This video shows you How to Pronounce 'Hi' , pronunciation guide. Learn MORE CONFUSING NAMES/WORDS: \u2022 How to Pronounce Louis Vuitton? (CORRECTLY) Join this channel to support and get access to ...",
+              "url": "https://www.youtube.com/watch?v=jKs-ZSXaMq8"
+            },
+            {
+              "title": "Hi: Definition, Meaning, and Examples - US Dictionary",
+              "snippet": "What is the meaning and origin of the word \" hi \"? Learn how this word has been used to greet and express interest in others.",
+              "url": "https://usdictionary.com/definitions/hi/"
+            },
+            {
+              "title": "HI Simple Definition - Merriam-Webster",
+              "snippet": "The simple definition of HI is \u2014used as an informal way of saying 'hello'.",
+              "url": "https://www.merriam-webster.com/simple/hi"
+            },
+            {
+              "title": "Hi.AI for Android - Download the APK from Uptodown",
+              "snippet": "Download the APK of Hi .AI for Android for free. Enjoy conversations with AI characters. Hi .AI is an app that allows you to engage in conversations with all...",
+              "url": "https://hi-ai.en.uptodown.com/android"
+            },
+            {
+              "title": "The Meaning and Use of \"Hi\" in English: A Comprehensive Guide",
+              "snippet": "In daily life and digital communication, greetings serve as an essential way to initiate conversation and establish rapport. Among the many greetings in English, \" hi \" stands out as a simple, friendly, and widely used word. But what exactly does \" hi \" mean, how did it originate, and how is it properly used? In this comprehensive guide, we will explore the origins, appropriate contexts, cultural ...",
+              "url": "https://theenglishtoday.com/the-meaning-and-use-of-hi-in-english-a-comprehensive-guide/"
+            },
+            {
+              "title": "Different Ways to Say Hello in English and How to Respond",
+              "snippet": "Hellllooooo! Hi ! What's up? There are so many different ways to greet someone in English and start a conversation. Hello is the most common, but if you want a different word or phrase, well, keep reading!",
+              "url": "https://blog.duolingo.com/hello-in-english/"
+            }
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "94d94cda-e79f-4284-b7ef-135cf65c4614",
+        "role": "user",
+        "content": "how   are you",
+        "created_at": "2026-07-03T20:01:10.405325"
+      },
+      {
+        "id": "03ef6894-9cff-45e0-9b36-cc6d6e84e866",
+        "role": "assistant",
+        "content": "hi how are you. Trust: 0.65 | Reinforced 0x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: \"How are you?\" | 60+ Different Ways to Ask & Respond to \"How are you?\" (https://eslforums.com/how-are-you/); 30 Other Ways to Say 'How Are You' (With Examples) (https://grammarheist.com/other-ways-to-say-how-are-you/); 100 Common Responses to \"How Are You?\" - Home of English Grammar (https://www.englishgrammar.org/common-responses-how-are-you/)",
+        "created_at": "2026-07-03T20:01:11.466529",
+        "query": {
+          "query_text": "how   are you",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "original_text": "hi how  are you",
+                "normalized_text": "hi how are you",
+                "subject": "hi how",
+                "predicate": "are",
+                "object_value": "you",
+                "timestamp": "2026-07-03T17:02:26.146139",
+                "reinforcement_count": 0,
+                "source": "chat",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "18688587-6761-4191-8e77-a2e758bd4176",
+                "score": 0.6450657513203242,
+                "recency_component": 0.9876643783008103,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.99, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "hi how are you. Trust: 0.65 | Reinforced 0x | no contradictions\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: \"How are you?\" | 60+ Different Ways to Ask & Respond to \"How are you?\" (https://eslforums.com/how-are-you/); 30 Other Ways to Say 'How Are You' (With Examples) (https://grammarheist.com/other-ways-to-say-how-are-you/); 100 Common Responses to \"How Are You?\" - Home of English Grammar (https://www.englishgrammar.org/common-responses-how-are-you/)",
+          "web_results": [
+            {
+              "title": "\"How are you?\" | 60+ Different Ways to Ask & Respond to \"How are you?\"",
+              "snippet": "However, you can also use the question as a simple greeting and move on to a different topic of conversation. Ways to Ask \" How are you ?\" To ask \" how are you ?\", you can use any of the phrases I provided in my previous responses. Some examples include \" How are you doing?\", \" How are you feeling?\", and \"What's been going on?\".",
+              "url": "https://eslforums.com/how-are-you/"
+            },
+            {
+              "title": "30 Other Ways to Say 'How Are You' (With Examples)",
+              "snippet": "Discover fresh, friendly other ways to say how are you that add warmth and meaning to conversations. Upgrade your greetings today. Try it!..",
+              "url": "https://grammarheist.com/other-ways-to-say-how-are-you/"
+            },
+            {
+              "title": "100 Common Responses to \"How Are You?\" - Home of English Grammar",
+              "snippet": "Stuck on how to answer \" How are you ?\"? Get 100 common responses, from casual to professional, plus friendly options for any mood or moment.",
+              "url": "https://www.englishgrammar.org/common-responses-how-are-you/"
+            },
+            {
+              "title": "22 Other Ways to Ask \"How Are You?\" (Casual and Formal)",
+              "snippet": "Plus, the best ways to reply politelyThere are many different ways to greet a friend you haven't seen for a while. It probably feels very natural to start with, \"Hey! How are you ?\" However, are there more creative or interesting ways to...",
+              "url": "https://www.wikihow.com/Say-How-Are-You"
+            },
+            {
+              "title": "10 Better Ways to Say \"How Are You?\" | Speak Natural ... - YouTube",
+              "snippet": "Tired of always saying \" How are you ?\" Learn 10 natural and friendly alternatives that native English speakers actually use in real conversations. Whether you ...",
+              "url": "https://www.youtube.com/watch?v=z4XLaC52eGw"
+            },
+            {
+              "title": "How to Ask \"How Are You?\" in English #LearnEnglish #SpeakEnglish",
+              "snippet": "Learn 4 natural ways to ask how someone's doing in English\u2014formal, informal, polite, and casual! \ud83d\udcac Perfect for work, friends, or daily conversations. Master...",
+              "url": "https://www.youtube.com/watch?v=JD5-s4zz9jo"
+            },
+            {
+              "title": "50+ Ways to Respond to \"How Are You?\" in English - 7ESL",
+              "snippet": "Master diverse and situational responses to \" How are you?\"\u2014from formal to funny, idiomatic to professional\u2014making sure you convey the perfect message every time.",
+              "url": "https://7esl.com/answer-how-are-you/"
+            },
+            {
+              "title": "How Are You? 50+ Ways to Ask and Answer in English",
+              "snippet": "Are you bored with saying \" How are you ?\" Don't worry, let's try out other interesting ways instead. Below is the list of common ways to say and response to How are you ? in English.",
+              "url": "https://eslbuzz.com/different-ways-to-say-and-response-to-how-are-you-in-english/"
+            },
+            {
+              "title": "250+ Best Replies to \"How Are You?\" For Any Moment",
+              "snippet": "Discover 250+ creative, funny, and heartfelt replies to \" How are you ?\" for any situation. Perfect for friends, family, or casual chats never run out of",
+              "url": "https://epicreplies.com/how-to-respond-to-how-are-you/"
+            },
+            {
+              "title": "40+ Ways to Ask How Are You in English - yakyacker.com",
+              "snippet": "Ways to ask how are you in English with natural alternatives, examples, and conversation-friendly phrases.",
+              "url": "https://yakyacker.com/learn-english/how-are-you-in-english/"
+            }
+          ],
+          "contradictions": []
+        }
+      }
+    ]
+  }
+}

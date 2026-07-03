@@ -1,0 +1,28 @@
+[
+  {
+    "contradiction_id": "90094d53-2116-42a2-9251-f639403f5007",
+    "resolved_at": "2026-07-03T19:16:50.600857",
+    "action": "keep_winner",
+    "winner_id": "a87f29cf-bde0-4c74-8614-d0a87f77b9c8",
+    "winner_text": "what's up",
+    "loser_ids": [
+      "7d2862f3-08f1-4740-8de7-4c1c4d123074"
+    ],
+    "loser_texts": [
+      "i am fine"
+    ]
+  },
+  {
+    "contradiction_id": "caeae560-eb3d-4720-8eaa-ab37d7fe629f",
+    "resolved_at": "2026-07-03T19:17:40.212197",
+    "action": "keep_winner",
+    "winner_id": "d967ad5d-61e0-4dbf-bc13-912574afb2ef",
+    "winner_text": "hi",
+    "loser_ids": [
+      "a87f29cf-bde0-4c74-8614-d0a87f77b9c8"
+    ],
+    "loser_texts": [
+      "what's up"
+    ]
+  }
+]

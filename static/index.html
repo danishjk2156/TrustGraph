@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrustGraph</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="https://unpkg.com/vis-network@9.1.9/dist/vis-network.min.js"></script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #111316;
+      --panel: rgba(28, 32, 37, .82);
+      --panel-strong: #20252b;
+      --line: rgba(255, 255, 255, .1);
+      --text: #f5f7fa;
+      --muted: #a7b0bb;
+      --soft: #6f7b88;
+      --accent: #39b98f;
+      --accent-2: #f2b84b;
+      --danger: #e65f5c;
+      --blue: #5ba7ff;
+      --shadow: 0 20px 50px rgba(0, 0, 0, .35);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(135deg, rgba(57, 185, 143, .16), transparent 34%),
+        linear-gradient(315deg, rgba(242, 184, 75, .14), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      letter-spacing: 0;
+    }
+
+    button, input, textarea { font: inherit; }
+    button {
+      border: 0;
+      color: var(--text);
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .shell {
+      display: grid;
+      grid-template-columns: 320px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      border-right: 1px solid var(--line);
+      background: rgba(17, 19, 22, .78);
+      backdrop-filter: blur(18px);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      min-width: 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.1;
+      font-weight: 760;
+    }
+
+    .brand span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 3px;
+    }
+
+    .icon-btn, .primary-btn, .choice-btn, .tab-btn {
+      min-height: 38px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .06);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 0 12px;
+      transition: background .15s ease, border-color .15s ease, transform .15s ease;
+    }
+
+    .icon-btn {
+      width: 38px;
+      padding: 0;
+      flex: 0 0 auto;
+    }
+
+    .primary-btn {
+      width: 100%;
+      background: linear-gradient(135deg, var(--accent), #238dc1);
+      border-color: transparent;
+      color: #07120f;
+      font-weight: 760;
+    }
+
+    .icon-btn:hover, .choice-btn:hover, .tab-btn:hover {
+      background: rgba(255, 255, 255, .1);
+      border-color: rgba(255, 255, 255, .2);
+    }
+
+    .primary-btn:hover { transform: translateY(-1px); }
+
+    .upload {
+      border: 1px dashed rgba(255, 255, 255, .22);
+      border-radius: 8px;
+      padding: 16px;
+      min-height: 108px;
+      display: grid;
+      align-content: center;
+      gap: 8px;
+      color: var(--muted);
+      background: rgba(255, 255, 255, .04);
+    }
+
+    .upload strong { color: var(--text); font-size: 14px; }
+    .upload.dragging { border-color: var(--accent); background: rgba(57, 185, 143, .12); }
+    .upload input { display: none; }
+
+    .history {
+      display: grid;
+      gap: 8px;
+      overflow: auto;
+      min-height: 160px;
+    }
+
+    .session {
+      width: 100%;
+      text-align: left;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      padding: 10px;
+      background: rgba(255, 255, 255, .04);
+      color: var(--muted);
+    }
+
+    .session.active {
+      border-color: rgba(57, 185, 143, .5);
+      color: var(--text);
+      background: rgba(57, 185, 143, .1);
+    }
+
+    .session b {
+      display: block;
+      color: inherit;
+      font-size: 13px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .session small { color: var(--soft); font-size: 11px; }
+
+    .main {
+      min-width: 0;
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+    }
+
+    .topbar {
+      min-height: 72px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(17, 19, 22, .54);
+      backdrop-filter: blur(16px);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn.active {
+      background: rgba(91, 167, 255, .15);
+      border-color: rgba(91, 167, 255, .4);
+    }
+
+    .status {
+      color: var(--muted);
+      font-size: 13px;
+      min-width: 120px;
+      text-align: right;
+    }
+
+    .view {
+      min-height: 0;
+      display: none;
+      padding: 20px;
+    }
+
+    .view.active { display: block; }
+
+    .chat-layout {
+      height: calc(100vh - 112px);
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) auto;
+      gap: 14px;
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    .messages {
+      min-height: 0;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding-right: 4px;
+      scroll-behavior: smooth;
+    }
+
+    .message {
+      max-width: min(760px, 92%);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 13px 14px;
+      background: var(--panel);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, .18);
+      white-space: pre-wrap;
+      line-height: 1.5;
+      animation: rise .2s ease both;
+    }
+
+    .message.user {
+      align-self: flex-end;
+      background: rgba(57, 185, 143, .14);
+      border-color: rgba(57, 185, 143, .32);
+    }
+
+    .message.assistant { align-self: flex-start; }
+
+    .meta-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 10px;
+    }
+
+    .composer {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(28, 32, 37, .88);
+      box-shadow: var(--shadow);
+      padding: 10px;
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto auto auto;
+      gap: 10px;
+      align-items: end;
+    }
+
+    .composer textarea {
+      width: 100%;
+      min-height: 46px;
+      max-height: 160px;
+      resize: vertical;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: var(--text);
+      padding: 12px 4px;
+    }
+
+    .graph-panel {
+      height: calc(100vh - 112px);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .04);
+      overflow: hidden;
+    }
+
+    #graph { width: 100%; height: 100%; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 14px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.3;
+    }
+
+    .fact {
+      border-left: 3px solid var(--blue);
+      padding-left: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .fact strong { color: var(--text); }
+
+    .actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .choice-btn.keep-new { border-color: rgba(57, 185, 143, .44); }
+    .choice-btn.keep-old { border-color: rgba(242, 184, 75, .44); }
+    .choice-btn.keep-both { border-color: rgba(91, 167, 255, .44); }
+
+    .empty {
+      color: var(--muted);
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 860px) {
+      .shell { grid-template-columns: 1fr; }
+      .sidebar {
+        position: static;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .history {
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(180px, 240px);
+        overflow-x: auto;
+        min-height: auto;
+      }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .status { text-align: left; }
+      .chat-layout, .graph-panel { height: calc(100vh - 320px); min-height: 520px; }
+      .composer { grid-template-columns: auto minmax(0, 1fr) auto; }
+      .composer .send { grid-column: 1 / -1; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div>
+          <h1>TrustGraph</h1>
+          <span>Cognee memory verification</span>
+        </div>
+        <button class="icon-btn" id="refresh" title="Refresh"><i data-lucide="refresh-cw"></i></button>
+      </div>
+
+      <button class="primary-btn" id="newChat"><i data-lucide="plus"></i>New Chat</button>
+
+      <label class="upload" id="uploadBox">
+        <input id="fileInput" type="file" accept=".txt,.md,.json,.csv,.log">
+        <strong>Drop document</strong>
+        <span id="uploadText">Text files are stored as trusted memory.</span>
+      </label>
+
+      <div class="history" id="history"></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="tabs">
+          <button class="tab-btn active" data-view="chatView"><i data-lucide="messages-square"></i>Chat</button>
+          <button class="tab-btn" data-view="graphView"><i data-lucide="network"></i>Graph</button>
+          <button class="tab-btn" data-view="resolveView"><i data-lucide="git-compare-arrows"></i>Resolve</button>
+        </div>
+        <div class="status" id="status">Ready</div>
+      </header>
+
+      <section class="view active" id="chatView">
+        <div class="chat-layout">
+          <div class="messages" id="messages"></div>
+          <form class="composer" id="composer">
+            <button class="icon-btn" type="button" id="mic" title="Voice input"><i data-lucide="mic"></i></button>
+            <textarea id="prompt" placeholder="Ask TrustGraph"></textarea>
+            <button class="icon-btn" type="button" id="speak" title="Read last answer"><i data-lucide="volume-2"></i></button>
+            <button class="icon-btn" type="button" id="stopSpeak" title="Stop speech"><i data-lucide="volume-x"></i></button>
+            <button class="primary-btn send" type="submit"><i data-lucide="send"></i>Send</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="view" id="graphView">
+        <div class="graph-panel"><div id="graph"></div></div>
+      </section>
+
+      <section class="view" id="resolveView">
+        <div class="grid" id="contradictions"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const state = { sessionId: null, sessions: [], lastAnswer: "", graph: null };
+    const $ = (id) => document.getElementById(id);
+
+    const api = async (path, options = {}) => {
+      const response = await fetch(path, options);
+      if (!response.ok) {
+        const detail = await response.text();
+        throw new Error(detail || response.statusText);
+      }
+      return response.json();
+    };
+
+    const setStatus = (text) => { $("status").textContent = text; };
+
+    const renderIcons = () => {
+      if (window.lucide) window.lucide.createIcons();
+    };
+
+    const loadSessions = async () => {
+      const data = await api("/api/chat/sessions");
+      state.sessions = data.sessions || [];
+      $("history").innerHTML = state.sessions.map((session) => `
+        <button class="session ${session.id === state.sessionId ? "active" : ""}" data-session="${session.id}">
+          <b>${escapeHtml(session.title || session.id)}</b>
+          <small>${session.message_count || 0} messages · ${session.id.slice(0, 8)}</small>
+        </button>
+      `).join("") || `<div class="empty">No chat history yet.</div>`;
+      document.querySelectorAll("[data-session]").forEach((button) => {
+        button.addEventListener("click", () => openSession(button.dataset.session));
+      });
+    };
+
+    const newSession = async () => {
+      const session = await api("/api/chat/sessions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ title: "New Chat" })
+      });
+      state.sessionId = session.id;
+      renderMessages(session.messages || []);
+      await loadSessions();
+    };
+
+    const openSession = async (id) => {
+      const session = await api(`/api/chat/sessions/${id}`);
+      state.sessionId = session.id;
+      renderMessages(session.messages || []);
+      await loadSessions();
+    };
+
+    const renderMessages = (messages) => {
+      $("messages").innerHTML = messages.map(renderMessage).join("") || `
+        <div class="empty">Start a new verified memory query.</div>
+      `;
+      const last = [...messages].reverse().find((item) => item.role === "assistant");
+      state.lastAnswer = last ? last.content : "";
+      $("messages").scrollTop = $("messages").scrollHeight;
+      document.querySelectorAll("[data-say]").forEach((button) => {
+        button.addEventListener("click", () => speak(button.dataset.say));
+      });
+      renderIcons();
+    };
+
+    const renderMessage = (message) => {
+      const citations = message.query?.web_results?.map((item) =>
+        `<a href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title || item.url)}</a>`
+      ).join("<br>") || "";
+      return `
+        <article class="message ${message.role}">
+          ${escapeHtml(message.content || "")}
+          ${citations ? `<div class="fact"><strong>Web citations</strong><br>${citations}</div>` : ""}
+          ${message.role === "assistant" ? `
+            <div class="meta-row">
+              <button class="icon-btn" data-say="${escapeAttr(message.content || "")}" title="Read answer"><i data-lucide="volume-2"></i></button>
+            </div>` : ""}
+        </article>
+      `;
+    };
+
+    const sendPrompt = async (event) => {
+      event.preventDefault();
+      const content = $("prompt").value.trim();
+      if (!content) return;
+      if (!state.sessionId) await newSession();
+      $("prompt").value = "";
+      setStatus("Thinking");
+      const current = $("messages").innerHTML;
+      $("messages").innerHTML = current.replace('<div class="empty">Start a new verified memory query.</div>', "") +
+        renderMessage({ role: "user", content });
+      try {
+        const data = await api(`/api/chat/sessions/${state.sessionId}/messages`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ content })
+        });
+        renderMessages(data.session.messages || []);
+        await loadSessions();
+        await loadContradictions();
+        setStatus("Verified");
+      } catch (error) {
+        setStatus("Error");
+        alert(error.message);
+      }
+    };
+
+    const loadGraph = async () => {
+      const data = await api("/api/graph");
+      const nodes = new vis.DataSet((data.nodes || []).map((node) => ({
+        id: node.id,
+        label: node.label,
+        shape: node.node_type === "subject" ? "box" : "dot",
+        color: node.node_type === "contradiction" ? "#e65f5c" : node.status === "active" ? "#39b98f" : "#f2b84b",
+        font: { color: "#f5f7fa", size: 14 },
+        value: Math.max(8, Math.round((node.trust || 0.2) * 30))
+      })));
+      const edges = new vis.DataSet((data.edges || []).map((edge) => ({
+        from: edge.source,
+        to: edge.target,
+        label: edge.relation,
+        color: "rgba(255,255,255,.28)",
+        font: { color: "#a7b0bb", size: 11 },
+        value: edge.weight || 1
+      })));
+      const container = $("graph");
+      state.graph = new vis.Network(container, { nodes, edges }, {
+        physics: { stabilization: true, barnesHut: { gravitationalConstant: -9500, springLength: 150 } },
+        interaction: { hover: true, tooltipDelay: 100 },
+        nodes: { borderWidth: 1 },
+        edges: { arrows: { to: { enabled: true, scaleFactor: .65 } }, smooth: true }
+      });
+    };
+
+    const loadContradictions = async () => {
+      const data = await api("/api/contradictions");
+      const items = data.contradictions || [];
+      $("contradictions").innerHTML = items.map((item) => `
+        <article class="card">
+          <h2>${escapeHtml(item.subject || "Contradiction")}</h2>
+          <div class="fact"><strong>Old</strong><br>${escapeHtml(item.fact_a.normalized_text)}<br>Trust ${Number(item.trust_a).toFixed(2)}</div>
+          <div class="fact"><strong>New</strong><br>${escapeHtml(item.fact_b.normalized_text)}<br>Trust ${Number(item.trust_b).toFixed(2)}</div>
+          <div>${escapeHtml(item.explanation || "")}</div>
+          <div class="actions">
+            <button class="choice-btn keep-new" data-resolve="${item.contradiction_id}" data-winner="${item.fact_b.fact_id}"><i data-lucide="check"></i>Keep New</button>
+            <button class="choice-btn keep-old" data-resolve="${item.contradiction_id}" data-winner="${item.fact_a.fact_id}"><i data-lucide="history"></i>Keep Old</button>
+            <button class="choice-btn keep-both" data-keep-both="${item.contradiction_id}"><i data-lucide="copy-plus"></i>Keep Both</button>
+          </div>
+        </article>
+      `).join("") || `<div class="empty">No unresolved contradictions.</div>`;
+
+      document.querySelectorAll("[data-resolve]").forEach((button) => {
+        button.addEventListener("click", () => resolveContradiction(button.dataset.resolve, button.dataset.winner));
+      });
+      document.querySelectorAll("[data-keep-both]").forEach((button) => {
+        button.addEventListener("click", () => resolveContradiction(button.dataset.keepBoth, null));
+      });
+      renderIcons();
+    };
+
+    const resolveContradiction = async (id, winnerId) => {
+      setStatus("Resolving");
+      await api("/api/resolve", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(winnerId
+          ? { contradiction_id: id, winner_id: winnerId, action: "keep_winner" }
+          : { contradiction_id: id, action: "keep_both" })
+      });
+      await loadContradictions();
+      await loadGraph();
+      setStatus("Resolved");
+    };
+
+    const uploadFile = async (file) => {
+      if (!file) return;
+      setStatus("Uploading");
+      const text = await file.text();
+      await fetch(`/api/upload?filename=${encodeURIComponent(file.name)}`, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain; charset=utf-8" },
+        body: text
+      }).then(async (response) => {
+        if (!response.ok) throw new Error(await response.text());
+      });
+      $("uploadText").textContent = `${file.name} stored`;
+      await loadGraph();
+      await loadContradictions();
+      setStatus("Uploaded");
+    };
+
+    const setupVoice = () => {
+      $("mic").addEventListener("click", () => {
+        const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!Recognition) return setStatus("Voice unavailable");
+        const recognition = new Recognition();
+        recognition.lang = "en-US";
+        recognition.interimResults = false;
+        recognition.onresult = (event) => {
+          $("prompt").value = event.results[0][0].transcript;
+        };
+        recognition.start();
+        setStatus("Listening");
+      });
+      $("speak").addEventListener("click", () => speak(state.lastAnswer));
+      $("stopSpeak").addEventListener("click", () => speechSynthesis.cancel());
+    };
+
+    const speak = (text) => {
+      if (!text || !window.speechSynthesis) return;
+      speechSynthesis.cancel();
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    };
+
+    const setupTabs = () => {
+      document.querySelectorAll("[data-view]").forEach((button) => {
+        button.addEventListener("click", async () => {
+          document.querySelectorAll("[data-view]").forEach((item) => item.classList.remove("active"));
+          document.querySelectorAll(".view").forEach((item) => item.classList.remove("active"));
+          button.classList.add("active");
+          $(button.dataset.view).classList.add("active");
+          if (button.dataset.view === "graphView") await loadGraph();
+          if (button.dataset.view === "resolveView") await loadContradictions();
+        });
+      });
+    };
+
+    const setupUpload = () => {
+      const box = $("uploadBox");
+      box.addEventListener("click", (event) => {
+        if (event.target !== $("fileInput")) $("fileInput").click();
+      });
+      $("fileInput").addEventListener("change", (event) => uploadFile(event.target.files[0]));
+      ["dragenter", "dragover"].forEach((name) => box.addEventListener(name, (event) => {
+        event.preventDefault();
+        box.classList.add("dragging");
+      }));
+      ["dragleave", "drop"].forEach((name) => box.addEventListener(name, (event) => {
+        event.preventDefault();
+        box.classList.remove("dragging");
+      }));
+      box.addEventListener("drop", (event) => uploadFile(event.dataTransfer.files[0]));
+    };
+
+    const escapeHtml = (value) => String(value)
+      .replaceAll("&", "&amp;").replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
+    const escapeAttr = escapeHtml;
+
+    const init = async () => {
+      renderIcons();
+      setupTabs();
+      setupUpload();
+      setupVoice();
+      $("composer").addEventListener("submit", sendPrompt);
+      $("newChat").addEventListener("click", newSession);
+      $("refresh").addEventListener("click", async () => {
+        await loadSessions();
+        await loadContradictions();
+        await loadGraph();
+      });
+      await loadSessions();
+      if (state.sessions[0]) await openSession(state.sessions[0].id);
+      else await newSession();
+      await loadContradictions();
+      setStatus("Ready");
+    };
+
+    init().catch((error) => {
+      console.error(error);
+      setStatus("Backend unavailable");
+    });
+  </script>
+</body>
+</html>
