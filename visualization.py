@@ -6,11 +6,18 @@ from pathlib import Path
 from typing import Any
 
 from trustgraph.models import FactStatus
-from trustgraph.trust_memory import TrustMemory
+
+try:
+    from trustgraph.trust_memory import TrustMemory
+except Exception:  # pragma: no cover
+    TrustMemory = None
 
 
 def visualize_graph(metadata_path: str | Path = "trustgraph/data/facts.json") -> dict[str, list[dict[str, Any]]]:
     """Return graph-view nodes and edges derived from the TrustGraph sidecar."""
+
+    if TrustMemory is None:
+        return {"nodes": [], "edges": []}
 
     memory = TrustMemory(metadata_path=metadata_path)
     facts = memory._load_facts()

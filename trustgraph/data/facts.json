@@ -1,0 +1,17 @@
+[
+  {
+    "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+    "original_text": "LLM model not configured.",
+    "normalized_text": "how are you -> LLM model not configured.",
+    "subject": "how are you",
+    "predicate": "answered_by",
+    "object_value": "LLM model not configured.",
+    "timestamp": "2026-07-04T12:18:52.201643",
+    "reinforcement_count": 1,
+    "source": "web_answer",
+    "status": "active",
+    "contradiction_group": null,
+    "contradiction_explanation": null,
+    "cognee_data_id": null
+  }
+]

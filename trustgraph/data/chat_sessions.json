@@ -1,0 +1,261 @@
+{
+  "780a7213-c9e1-4c67-87b0-206086e18929": {
+    "id": "780a7213-c9e1-4c67-87b0-206086e18929",
+    "title": "how are you",
+    "created_at": "2026-07-04T12:18:04.757321",
+    "updated_at": "2026-07-04T12:49:14.073272",
+    "messages": [
+      {
+        "id": "4bf6f1a6-02ce-46c8-adbd-cc69aae72cd6",
+        "role": "user",
+        "content": "how are you",
+        "created_at": "2026-07-04T12:18:50.915914"
+      },
+      {
+        "id": "dce813de-9460-4831-9ffc-93c77a705443",
+        "role": "assistant",
+        "content": "No relevant trusted local memory was found.\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: \"How are you?\" | 60+ Different Ways to Ask & Respond to \"How are you?\" (https://eslforums.com/how-are-you/); 30 Other Ways to Say 'How Are You' (With Examples) (https://grammarheist.com/other-ways-to-say-how-are-you/); 100 Common Responses to \"How Are You?\" - Home of English Grammar (https://www.englishgrammar.org/common-responses-how-are-you/)",
+        "created_at": "2026-07-04T12:18:58.101009",
+        "query": {
+          "query_text": "how are you",
+          "ranked_facts": [],
+          "answer_text": "No relevant trusted local memory was found.\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: \"How are you?\" | 60+ Different Ways to Ask & Respond to \"How are you?\" (https://eslforums.com/how-are-you/); 30 Other Ways to Say 'How Are You' (With Examples) (https://grammarheist.com/other-ways-to-say-how-are-you/); 100 Common Responses to \"How Are You?\" - Home of English Grammar (https://www.englishgrammar.org/common-responses-how-are-you/)",
+          "web_results": [
+            {
+              "title": "\"How are you?\" | 60+ Different Ways to Ask & Respond to \"How are you?\"",
+              "snippet": "However, you can also use the question as a simple greeting and move on to a different topic of conversation. Ways to Ask \" How are you ?\" To ask \" how are you ?\", you can use any of the phrases I provided in my previous responses. Some examples include \" How are you doing?\", \" How are you feeling?\", and \"What's been going on?\".",
+              "url": "https://eslforums.com/how-are-you/"
+            },
+            {
+              "title": "30 Other Ways to Say 'How Are You' (With Examples)",
+              "snippet": "Discover fresh, friendly other ways to say how are you that add warmth and meaning to conversations. Upgrade your greetings today. Try it!..",
+              "url": "https://grammarheist.com/other-ways-to-say-how-are-you/"
+            },
+            {
+              "title": "100 Common Responses to \"How Are You?\" - Home of English Grammar",
+              "snippet": "Stuck on how to answer \" How are you ?\"? Get 100 common responses, from casual to professional, plus friendly options for any mood or moment.",
+              "url": "https://www.englishgrammar.org/common-responses-how-are-you/"
+            },
+            {
+              "title": "How to Ask \"How Are You?\" in English #LearnEnglish #SpeakEnglish",
+              "snippet": "Learn 4 natural ways to ask how someone's doing in English\u2014formal, informal, polite, and casual! \ud83d\udcac Perfect for work, friends, or daily conversations. Master...",
+              "url": "https://www.youtube.com/watch?v=JD5-s4zz9jo"
+            },
+            {
+              "title": "22 Other Ways to Ask \"How Are You?\" (Casual and Formal)",
+              "snippet": "Plus, the best ways to reply politelyThere are many different ways to greet a friend you haven't seen for a while. It probably feels very natural to start with, \"Hey! How are you ?\" However, are there more creative or interesting ways to...",
+              "url": "https://www.wikihow.com/Say-How-Are-You"
+            },
+            {
+              "title": "10 Natural Ways to Say \"How Are You?\" in English",
+              "snippet": "Tired of always saying \" How are you ?\" \ud83d\ude05Here are 10 natural and fluent ways to ask someone how they're doing in everyday English:\u2022 How's it going?\u2022 How have ...",
+              "url": "https://www.youtube.com/watch?v=XJyjWlAgVrE"
+            },
+            {
+              "title": "50+ Ways to Respond to \"How Are You?\" in English - 7ESL",
+              "snippet": "Master diverse and situational responses to \" How are you?\"\u2014from formal to funny, idiomatic to professional\u2014making sure you convey the perfect message every time.",
+              "url": "https://7esl.com/answer-how-are-you/"
+            },
+            {
+              "title": "40 Other Ways to Ask \"How Are You\" in English - 7ESL",
+              "snippet": "Discover diverse ways to ask \" how are you ?\". Enhance your conversations with formal, informal, idiomatic, and creative expressions. Learn to connect better in any setting!",
+              "url": "https://7esl.com/how-are-you/"
+            },
+            {
+              "title": "How Are You? 50+ Ways to Ask and Answer in English",
+              "snippet": "Are you bored with saying \" How are you ?\" Don't worry, let's try out other interesting ways instead. Below is the list of common ways to say and response to How are you ? in English.",
+              "url": "https://eslbuzz.com/different-ways-to-say-and-response-to-how-are-you-in-english/"
+            },
+            {
+              "title": "40+ Ways to Ask How Are You in English - yakyacker.com",
+              "snippet": "Ways to ask how are you in English with natural alternatives, examples, and conversation-friendly phrases.",
+              "url": "https://yakyacker.com/learn-english/how-are-you-in-english/"
+            }
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "59872ead-6222-4b02-ab8b-7de6af2354db",
+        "role": "user",
+        "content": "hi",
+        "created_at": "2026-07-04T12:21:16.010029"
+      },
+      {
+        "id": "a4a66af3-d138-4ca2-a8be-1108db55209c",
+        "role": "assistant",
+        "content": "LLM model not configured.",
+        "created_at": "2026-07-04T12:21:17.198569",
+        "query": {
+          "query_text": "hi",
+          "ranked_facts": [],
+          "answer_text": "LLM model not configured.",
+          "web_results": [],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "69969059-335a-47e4-a871-9e669376d83a",
+        "role": "user",
+        "content": "how are you",
+        "created_at": "2026-07-04T12:21:28.145748"
+      },
+      {
+        "id": "5372ee5f-52dd-44b0-ba53-c2072b580298",
+        "role": "assistant",
+        "content": "LLM model not configured.",
+        "created_at": "2026-07-04T12:21:30.747278",
+        "query": {
+          "query_text": "how are you",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+                "original_text": "No relevant trusted local memory was found.\n\nWeb Verification: Web results were retrieved for comparison, but no LLM synthesis was available. Review these sources: \"How are you?\" | 60+ Different Ways to Ask & Respond to \"How are you?\" (https://eslforums.com/how-are-you/); 30 Other Ways to Say 'How Are You' (With Examples) (https://grammarheist.com/other-ways-to-say-how-are-you/); 100 Common Responses to \"How Are You?\" - Home of English Grammar (https://www.englishgrammar.org/common-responses-how-are-you/)",
+                "normalized_text": "how are you -> No relevant trusted local memory was found.",
+                "subject": "how are you",
+                "predicate": "answered_by",
+                "object_value": "No relevant trusted local memory was found.",
+                "timestamp": "2026-07-04T12:18:52.201643",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+                "score": 0.6499276383252212,
+                "recency_component": 0.9998190958130528,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "LLM model not configured.",
+          "web_results": [
+            {
+              "title": "\"How are you?\" | 60+ Different Ways to Ask & Respond to \"How are you?\"",
+              "snippet": "However, you can also use the question as a simple greeting and move on to a different topic of conversation. Ways to Ask \" How are you ?\" To ask \" how are you ?\", you can use any of the phrases I provided in my previous responses. Some examples include \" How are you doing?\", \" How are you feeling?\", and \"What's been going on?\".",
+              "url": "https://eslforums.com/how-are-you/"
+            },
+            {
+              "title": "30 Other Ways to Say 'How Are You' (With Examples)",
+              "snippet": "Discover fresh, friendly other ways to say how are you that add warmth and meaning to conversations. Upgrade your greetings today. Try it!..",
+              "url": "https://grammarheist.com/other-ways-to-say-how-are-you/"
+            },
+            {
+              "title": "100 Common Responses to \"How Are You?\" - Home of English Grammar",
+              "snippet": "Stuck on how to answer \" How are you ?\"? Get 100 common responses, from casual to professional, plus friendly options for any mood or moment.",
+              "url": "https://www.englishgrammar.org/common-responses-how-are-you/"
+            },
+            {
+              "title": "22 Other Ways to Ask \"How Are You?\" (Casual and Formal)",
+              "snippet": "Plus, the best ways to reply politelyThere are many different ways to greet a friend you haven't seen for a while. It probably feels very natural to start with, \"Hey! How are you ?\" However, are there more creative or interesting ways to...",
+              "url": "https://www.wikihow.com/Say-How-Are-You"
+            },
+            {
+              "title": "50+ Ways to Respond to \"How Are You?\" in English - 7ESL",
+              "snippet": "Master diverse and situational responses to \" How are you?\"\u2014from formal to funny, idiomatic to professional\u2014making sure you convey the perfect message every time.",
+              "url": "https://7esl.com/answer-how-are-you/"
+            },
+            {
+              "title": "How to Ask \"How Are You?\" in English #LearnEnglish #SpeakEnglish",
+              "snippet": "Learn 4 natural ways to ask how someone's doing in English\u2014formal, informal, polite, and casual! \ud83d\udcac Perfect for work, friends, or daily conversations. Master...",
+              "url": "https://www.youtube.com/watch?v=JD5-s4zz9jo"
+            },
+            {
+              "title": "How Are You? 50+ Ways to Ask and Answer in English",
+              "snippet": "Are you bored with saying \" How are you ?\" Don't worry, let's try out other interesting ways instead. Below is the list of common ways to say and response to How are you ? in English.",
+              "url": "https://eslbuzz.com/different-ways-to-say-and-response-to-how-are-you-in-english/"
+            },
+            {
+              "title": "10 Better Ways to Say \"How Are You?\" | Speak Natural ... - YouTube",
+              "snippet": "Tired of always saying \" How are you ?\" Learn 10 natural and friendly alternatives that native English speakers actually use in real conversations. Whether you ...",
+              "url": "https://www.youtube.com/watch?v=z4XLaC52eGw"
+            },
+            {
+              "title": "40 Other Ways to Ask \"How Are You\" in English - 7ESL",
+              "snippet": "Discover diverse ways to ask \" how are you ?\". Enhance your conversations with formal, informal, idiomatic, and creative expressions. Learn to connect better in any setting!",
+              "url": "https://7esl.com/how-are-you/"
+            },
+            {
+              "title": "40+ Ways to Ask How Are You in English - yakyacker.com",
+              "snippet": "Ways to ask how are you in English with natural alternatives, examples, and conversation-friendly phrases.",
+              "url": "https://yakyacker.com/learn-english/how-are-you-in-english/"
+            }
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "8f595387-5fe7-4efb-93d4-b8bd7a6f2094",
+        "role": "user",
+        "content": "hello",
+        "created_at": "2026-07-04T12:22:22.005438"
+      },
+      {
+        "id": "9c54d22f-ebb4-4da0-b069-b7e842c4f7cc",
+        "role": "assistant",
+        "content": "LLM model not configured.",
+        "created_at": "2026-07-04T12:22:22.911868",
+        "query": {
+          "query_text": "hello",
+          "ranked_facts": [],
+          "answer_text": "LLM model not configured.",
+          "web_results": [],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "7af8d548-5fc4-4fb6-ad8a-7022e582ce0d",
+        "role": "user",
+        "content": "hi",
+        "created_at": "2026-07-04T12:49:13.170232"
+      },
+      {
+        "id": "d2873a1f-dad4-4db9-a33f-2174f26dc43c",
+        "role": "assistant",
+        "content": "Hello. It's nice to meet you, but I don't have any information to share or discuss at the moment.\n\nWeb Verification: No web results are available to verify any claims, and there are no relevant local memories to draw from.",
+        "created_at": "2026-07-04T12:49:14.073272",
+        "query": {
+          "query_text": "hi",
+          "ranked_facts": [],
+          "answer_text": "Hello. It's nice to meet you, but I don't have any information to share or discuss at the moment.\n\nWeb Verification: No web results are available to verify any claims, and there are no relevant local memories to draw from.",
+          "web_results": [],
+          "contradictions": []
+        }
+      }
+    ]
+  },
+  "1649d760-ffca-45b8-a76d-e61cf5bf2613": {
+    "id": "1649d760-ffca-45b8-a76d-e61cf5bf2613",
+    "title": "hi",
+    "created_at": "2026-07-04T12:18:04.785626",
+    "updated_at": "2026-07-04T12:18:04.955224",
+    "messages": [
+      {
+        "id": "788707b4-33a7-4684-a0af-c7d1385d55c3",
+        "role": "user",
+        "content": "hi",
+        "created_at": "2026-07-04T12:18:04.810264"
+      },
+      {
+        "id": "6420f477-0006-487a-8e5d-714ea5f2055c",
+        "role": "assistant",
+        "content": "No relevant trusted local memory was found.\n\nWeb Verification: No web results were available.",
+        "created_at": "2026-07-04T12:18:04.955224",
+        "query": {
+          "query_text": "hi",
+          "ranked_facts": [],
+          "answer_text": "No relevant trusted local memory was found.\n\nWeb Verification: No web results were available.",
+          "web_results": [],
+          "contradictions": []
+        }
+      }
+    ]
+  }
+}

@@ -559,65 +559,53 @@ class TrustMemory:
         session_id: str | None = None,
     ) -> str:
         web_results = web_results or []
-        session_id = session_id or "chat_session_1"
+        _ = session_id or "chat_session_1"
 
-        import cognee
+        model = _model_name()
+        if model:
+            try:
+                from litellm import acompletion
 
-        @cognee.agent_memory(
-            with_memory=True,
-            with_session_memory=True,
-            session_id=session_id,
+                context_items = [
+                    item.model_dump(mode="json", exclude={"memory_result"})
+                    for item in ranked[:6]
+                ]
+                response = await acompletion(
+                    model=model,
+                    messages=[
+                        {"role": "system", "content": TRUST_AWARE_RESPONSE_PROMPT},
+                        {
+                            "role": "user",
+                            "content": (
+                                f"Question: {query_text}\n\n"
+                                f"Memory context:\n{trust_context_block(context_items)}\n\n"
+                                f"Web search context:\n{web_context_block(web_results)}"
+                            ),
+                        },
+                    ],
+                    temperature=0,
+                )
+                content = response.choices[0].message.content
+                if content:
+                    return content.strip()
+            except Exception:
+                pass
+
+        if not ranked:
+            return "No relevant trusted local memory was found."
+
+        top = ranked[0]
+        fact = top.fact
+        score = top.trust_score.score
+        unresolved = any(
+            pair.fact_a.fact_id == fact.fact_id or pair.fact_b.fact_id == fact.fact_id
+            for pair in contradictions
         )
-        async def chat_agent(question: str, system_prompt: str) -> str:
-            return await ask_llm(question, system_prompt, ranked, web_results)
-
-        try:
-            return await chat_agent(query_text, TRUST_AWARE_RESPONSE_PROMPT)
-        except Exception:
-            model = _model_name()
-            if model:
-                try:
-                    from litellm import acompletion
-
-                    context_items = [
-                        item.model_dump(mode="json", exclude={"memory_result"})
-                        for item in ranked[:6]
-                    ]
-                    response = await acompletion(
-                        model=model,
-                        messages=[
-                            {"role": "system", "content": TRUST_AWARE_RESPONSE_PROMPT},
-                            {
-                                "role": "user",
-                                "content": (
-                                    f"Question: {query_text}\n\n"
-                                    f"Memory context:\n{trust_context_block(context_items)}\n\n"
-                                    f"Web search context:\n{web_context_block(web_results)}"
-                                ),
-                            },
-                        ],
-                        temperature=0,
-                    )
-                    content = response.choices[0].message.content
-                    if content:
-                        return content.strip()
-                except Exception:
-                    pass
-
-        memory_line = "No relevant trusted local memory was found."
-        if ranked:
-            top = ranked[0]
-            fact = top.fact
-            score = top.trust_score.score
-            unresolved = any(
-                pair.fact_a.fact_id == fact.fact_id or pair.fact_b.fact_id == fact.fact_id
-                for pair in contradictions
-            )
-            suffix = "unresolved contradiction" if unresolved else "no contradictions"
-            memory_line = (
-                f"{fact.normalized_text}. Trust: {score:.2f} | "
-                f"Reinforced {fact.reinforcement_count}x | {suffix}"
-            )
+        suffix = "unresolved contradiction" if unresolved else "no contradictions"
+        memory_line = (
+            f"{fact.normalized_text}. Trust: {score:.2f} | "
+            f"Reinforced {fact.reinforcement_count}x | {suffix}"
+        )
 
         if not web_results:
             return f"{memory_line}\n\nWeb Verification: No web results were available."
