@@ -257,5 +257,1236 @@
         }
       }
     ]
+  },
+  "daeb56e2-8de2-455b-9f1e-f54ed1f0fc7b": {
+    "id": "daeb56e2-8de2-455b-9f1e-f54ed1f0fc7b",
+    "title": "New Chat",
+    "created_at": "2026-07-05T14:14:48.909008",
+    "updated_at": "2026-07-05T14:14:48.909008",
+    "messages": []
+  },
+  "c4f0e8fa-6247-413d-9682-11cf01054864": {
+    "id": "c4f0e8fa-6247-413d-9682-11cf01054864",
+    "title": "what's up",
+    "created_at": "2026-07-05T14:14:48.935027",
+    "updated_at": "2026-07-05T14:34:34.528507",
+    "messages": [
+      {
+        "id": "189e5eb1-e161-4e9a-85d7-1b0d3b74ef2b",
+        "role": "user",
+        "content": "what's up",
+        "created_at": "2026-07-05T14:14:48.962591"
+      },
+      {
+        "id": "f7add54a-a15c-410e-8bb9-24cfb07c0113",
+        "role": "assistant",
+        "content": "There's no information available to provide a specific answer. It seems like a casual greeting, but without more context, it's hard to respond.\n\nWeb Verification: No web results are available to support or contradict this answer, and there are no relevant local memories to verify the context of the question.",
+        "created_at": "2026-07-05T14:14:51.263241",
+        "query": {
+          "query_text": "what's up",
+          "ranked_facts": [],
+          "answer_text": "There's no information available to provide a specific answer. It seems like a casual greeting, but without more context, it's hard to respond.\n\nWeb Verification: No web results are available to support or contradict this answer, and there are no relevant local memories to verify the context of the question.",
+          "web_results": [],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "46ab5242-7893-4f3e-b38a-c7a92a9aa9e4",
+        "role": "user",
+        "content": "who is trump",
+        "created_at": "2026-07-05T14:15:08.463730"
+      },
+      {
+        "id": "3d7797c0-3aec-4b28-a441-1f914940ce9c",
+        "role": "assistant",
+        "content": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.\n\nWeb Verification: Web results support the answer, with multiple sources confirming Donald Trump's presidency and biography, including Britannica (https://www.britannica.com/biography/Donald-Trump), Wikipedia (https://en.wikipedia.org/wiki/Political_career_of_Donald_Trump), and official White House (https://www.whitehouse.gov/administration/donald-j-trump/) and Trump Organization (https://www.trump.com/leadership/donald-j-trump-biography/hello) websites.",
+        "created_at": "2026-07-05T14:15:19.801161",
+        "query": {
+          "query_text": "who is trump",
+          "ranked_facts": [],
+          "answer_text": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.\n\nWeb Verification: Web results support the answer, with multiple sources confirming Donald Trump's presidency and biography, including Britannica (https://www.britannica.com/biography/Donald-Trump), Wikipedia (https://en.wikipedia.org/wiki/Political_career_of_Donald_Trump), and official White House (https://www.whitehouse.gov/administration/donald-j-trump/) and Trump Organization (https://www.trump.com/leadership/donald-j-trump-biography/hello) websites.",
+          "web_results": [
+            {
+              "title": "Donald Trump | Birthday, Age, Education, Biography, Impeachments ...",
+              "snippet": "Donald Trump is the 45th and 47th president of the United States (2017-21; 2025- ). Following his inauguration on January 20, 2025, Trump became only the second president to serve two nonconsecutive terms, the first being Grover Cleveland (1885-89; 1893-97).",
+              "url": "https://www.britannica.com/biography/Donald-Trump"
+            },
+            {
+              "title": "Political career of Donald Trump - Wikipedia",
+              "snippet": "Since 2025, Donald Trump has been the 47th and current president of the United States, having won the 2024 presidential election. He previously served a separate, non-consecutive term from 2017 to 2021 as the 45th president. Trump has officially run as a candidate for president four times, in 2000, 2016, 2020, and 2024; he also unofficially campaigned in 2012 and mulled a run in 2004. [1] He ...",
+              "url": "https://en.wikipedia.org/wiki/Political_career_of_Donald_Trump"
+            },
+            {
+              "title": "Donald Trump - Simple English Wikipedia, the free encyclopedia",
+              "snippet": "Donald John Trump was born at Jamaica Hospital Medical Center in Queens, New York City. [1] He is the son of Fred Trump and his wife Mary Anne (n\u00e9e MacLeod). They married in 1936. His mother was born on the Isle of Lewis, off the west coast of Scotland. [2] Donald was one of five children. [3] Donald's oldest brother, Fred Jr., died in 1981 at the age of 43, due to an alcohol addiction. [4 ...",
+              "url": "https://simple.wikipedia.org/wiki/Donald_Trump"
+            },
+            {
+              "title": "President Donald J. Trump - The White House",
+              "snippet": "After a landslide election victory in 2024, President Donald J. Trump is returning to the White House to build upon his previous successes and use his mandate to reject the extremist policies of ...",
+              "url": "https://www.whitehouse.gov/administration/donald-j-trump/"
+            },
+            {
+              "title": "Donald Trump: Biography, U.S. President, Businessman",
+              "snippet": "Donald Trump is the 45th and 47th U.S. president who was previously a real estate mogul and reality TV star. Read about his education, wife, children, and more.",
+              "url": "https://www.biography.com/political-figures/donald-trump"
+            },
+            {
+              "title": "Donald Trump | Breaking News & Latest Updates | AP News",
+              "snippet": "Stay informed and read the latest breaking news and updates on Donald Trump from AP News, the definitive source for independent journalism.",
+              "url": "https://apnews.com/hub/donald-trump"
+            },
+            {
+              "title": "Donald Trump Facts | Britannica",
+              "snippet": "Donald Trump served as the 45th president of the United States (2017-21). He was the third president in U.S. history to be impeached by the U.S. House of Representatives and the only president to be impeached twice\u2014once in 2019 (he was acquitted by the U.S. Senate in 2020) and once in 2021. In the presidential election of 2020, Trump was defeated by his Democratic opponent, former vice ...",
+              "url": "https://www.britannica.com/facts/Donald-Trump"
+            },
+            {
+              "title": "Donald J. Trump Official Biography | The Trump Organization",
+              "snippet": "Donald J. Trump is the 45th President of the United States and the Founder of The Trump Organization, a global real estate empire and one of the most recognized brands in the world.",
+              "url": "https://www.trump.com/leadership/donald-j-trump-biography/hello"
+            },
+            {
+              "title": "Latest Donald Trump News | Top Headlines on Donald Trump | Reuters",
+              "snippet": "Donald Trump is the undisputed frontrunner for the Republican presidential nomination in the 2024 election. He is also the defendant in four criminal cases. Bookmark this page to get the latest ...",
+              "url": "https://www.reuters.com/world/us/donald-trump/"
+            },
+            {
+              "title": "Donald Trump's life story: From real estate to politics - BBC",
+              "snippet": "Trump is the fourth child of New York real estate tycoon Fred Trump . Despite the family's wealth, he was expected to work the lowest-tier jobs within his father's company and was sent off to a ...",
+              "url": "https://www.bbc.com/news/world-us-canada-35318432"
+            }
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "d3f28fb9-1746-4166-bbbb-ec60da93ba6b",
+        "role": "user",
+        "content": "i  am  MD",
+        "created_at": "2026-07-05T14:17:55.836793"
+      },
+      {
+        "id": "aac62fdf-5c77-42ff-ac70-7583d24abe89",
+        "role": "assistant",
+        "content": "You are an MD, which typically stands for Doctor of Medicine, a professional degree in medicine. \n\nWeb Verification: \nNo web results are available to support or contradict this claim. Local memory does not contain relevant information to verify your statement.",
+        "created_at": "2026-07-05T14:17:57.173838",
+        "query": {
+          "query_text": "i  am  MD",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+                "original_text": "LLM model not configured.",
+                "normalized_text": "how are you -> LLM model not configured.",
+                "subject": "how are you",
+                "predicate": "answered_by",
+                "object_value": "LLM model not configured.",
+                "timestamp": "2026-07-04T12:18:52.201643",
+                "reinforcement_count": 1,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+                "score": 0.7466688009941916,
+                "recency_component": 0.8973863297340333,
+                "reinforcement_component": 0.3934693402873666,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.90, reinforcement=0.39, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "original_text": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.\n\nWeb Verification: Web results support the answer, with multiple sources confirming Donald Trump's presidency and biography, including Britannica (https://www.britannica.com/biography/Donald-Trump), Wikipedia (https://en.wikipedia.org/wiki/Political_career_of_Donald_Trump), and official White House (https://www.whitehouse.gov/administration/donald-j-trump/) and Trump Organization (https://www.trump.com/leadership/donald-j-trump-biography/hello) websites.",
+                "normalized_text": "who is trump -> Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "subject": "who is trump",
+                "predicate": "answered_by",
+                "object_value": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "timestamp": "2026-07-05T14:15:10.768403",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "score": 0.6499232978003449,
+                "recency_component": 0.9998082445008623,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "You are an MD, which typically stands for Doctor of Medicine, a professional degree in medicine. \n\nWeb Verification: \nNo web results are available to support or contradict this claim. Local memory does not contain relevant information to verify your statement.",
+          "web_results": [],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "b8314d43-330a-436f-8ed1-5127787f77e0",
+        "role": "user",
+        "content": "who am  i",
+        "created_at": "2026-07-05T14:18:07.126720"
+      },
+      {
+        "id": "5985fbf3-4cf9-4724-b7dc-85554ed86ab8",
+        "role": "assistant",
+        "content": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.\n\nWeb Verification: \nWeb results support the idea that \"who am I\" is a complex question that can be answered through self-reflection and exploration. Relevant web result titles include \"Who Am I? 15 Self-Discovery Prompts to Find Your Purpose\" (https://empowerprocess.com/purpose/who-am-i-15-self-discovery-prompts-to-find-your-purpose/), \"Who am I = what is my identity?\" (https://ideapod.com/who-am-i-the-answer-to-lifes-most-defining-question/), and \"Know Yourself? 6 Specific Ways to Know Who You Are\" (https://www.psychologytoday.com/us/blog/changepower/201603/know-yourself-6-specific-ways-to-know-who-you-are). There are no unresolved local-memory contradictions that affect the answer.",
+        "created_at": "2026-07-05T14:18:53.276614",
+        "query": {
+          "query_text": "who am  i",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+                "original_text": "LLM model not configured.",
+                "normalized_text": "how are you -> LLM model not configured.",
+                "subject": "how are you",
+                "predicate": "answered_by",
+                "object_value": "LLM model not configured.",
+                "timestamp": "2026-07-04T12:18:52.201643",
+                "reinforcement_count": 1,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+                "score": 0.7466641397730202,
+                "recency_component": 0.8973746766811047,
+                "reinforcement_component": 0.3934693402873666,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.90, reinforcement=0.39, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "original_text": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.\n\nWeb Verification: Web results support the answer, with multiple sources confirming Donald Trump's presidency and biography, including Britannica (https://www.britannica.com/biography/Donald-Trump), Wikipedia (https://en.wikipedia.org/wiki/Political_career_of_Donald_Trump), and official White House (https://www.whitehouse.gov/administration/donald-j-trump/) and Trump Organization (https://www.trump.com/leadership/donald-j-trump-biography/hello) websites.",
+                "normalized_text": "who is trump -> Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "subject": "who is trump",
+                "predicate": "answered_by",
+                "object_value": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "timestamp": "2026-07-05T14:15:10.768403",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "score": 0.6499181045773124,
+                "recency_component": 0.999795261443281,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.\n\nWeb Verification: \nWeb results support the idea that \"who am I\" is a complex question that can be answered through self-reflection and exploration. Relevant web result titles include \"Who Am I? 15 Self-Discovery Prompts to Find Your Purpose\" (https://empowerprocess.com/purpose/who-am-i-15-self-discovery-prompts-to-find-your-purpose/), \"Who am I = what is my identity?\" (https://ideapod.com/who-am-i-the-answer-to-lifes-most-defining-question/), and \"Know Yourself? 6 Specific Ways to Know Who You Are\" (https://www.psychologytoday.com/us/blog/changepower/201603/know-yourself-6-specific-ways-to-know-who-you-are). There are no unresolved local-memory contradictions that affect the answer.",
+          "web_results": [
+            {
+              "title": "Who Am I? 15 Self-Discovery Prompts to Find Your Purpose",
+              "snippet": "Discover who you truly are with these powerful self-discovery prompts. Reflect, gain clarity, and begin living a meaningful, purpose-driven life today.",
+              "url": "https://empowerprocess.com/purpose/who-am-i-15-self-discovery-prompts-to-find-your-purpose/"
+            },
+            {
+              "title": "\"Who am I?\" The answer to life's most defining question - Ideapod",
+              "snippet": "Who am I = what is my identity? The \"answer\" to \" who am I \" is our identity. Our identity is our all-encompassing system of memories, experiences, feelings, thoughts, relationships, and values that define who each of us is . It's the stuff that makes up a \"self.\" Identity is a critical component of understanding who we are. Why?",
+              "url": "https://ideapod.com/who-am-i-the-answer-to-lifes-most-defining-question/"
+            },
+            {
+              "title": "How to Know Who You Are: 14 Steps (with Pictures) - wikiHow",
+              "snippet": "One study suggests having a better ability to know yourself can help you make effective decisions and achieve goals. Beyond the realm of science, the importance of knowing who you are is recognized by everyday people and pop culture icons,...",
+              "url": "https://www.wikihow.com/Know-Who-You-Are"
+            },
+            {
+              "title": "\"Who Am I?\" Quiz | BetterHelp",
+              "snippet": "A 'who am I' quiz is just one of many different ways that you can start getting to know yourself. Read on to learn more about taking a \" who am I quiz\".",
+              "url": "https://www.betterhelp.com/advice/psychology/learn-about-yourself-what-kind-of-person-am-i-quiz/"
+            },
+            {
+              "title": "What Is My IP Address - See Your Public Address - IPv4 & IPv6",
+              "snippet": "IP address lookup, location, proxy detection, email tracing, IP hiding tips, blacklist check, speed test, and forums. Find, get, and show my IP address.",
+              "url": "https://whatismyipaddress.com/"
+            },
+            {
+              "title": "Know Yourself? 6 Specific Ways to Know Who You Are",
+              "snippet": "What does it really mean to \"know yourself?\" These 6 \"VITAL Signs\" of self can help you understand yourself, make better choices, and be happier.",
+              "url": "https://www.psychologytoday.com/us/blog/changepower/201603/know-yourself-6-specific-ways-to-know-who-you-are"
+            },
+            {
+              "title": "Who Am I? A Practical Guide To Discovering Your Self-Identity",
+              "snippet": "\" Who Am I ? A Practical Guide To Discovering Your Self-Identity\" explores why understanding personal identity is a vital, ongoing journey, especially in today's rapidly changing world, where authentic self-reflection is essential for fulfillment and growth. Drawing on insights from psychology, sociology, and philosophy, this article provides practical self-exploration tools, including ...",
+              "url": "https://kingamnich.com/2025/09/09/who-am-i-a-practical-guide-to-discovering-your-self-identity/"
+            },
+            {
+              "title": "PDF WHO AM I - gururamana.org",
+              "snippet": "Introduction Who am I ? is the title given to a set of questions and answers bearing on Self-enquiry. The questions were put to Bhagavan Sri Ramana Maharshi by Sri M. Sivaprakasam Pillai, about the year 1902. Sri Pillai, a graduate in philosophy, was at the time employed in the Revenue Department of the South Arcot Collectorate. During his visit to Tiruvannamalai in 1902 on oficial work, he ...",
+              "url": "https://www.gururamana.org/Resources/Books/Who_Am_I_English.pdf"
+            },
+            {
+              "title": "Casting Crowns - Who Am I (Official Lyric Video) - YouTube",
+              "snippet": "Watch the lyric video for \" Who Am I \" by Casting Crowns! Click to watch the new music video for \"Scars In Heaven\" by Casting Crowns!...more",
+              "url": "https://www.youtube.com/watch?v=3rT8Re1EIQc"
+            },
+            {
+              "title": "Who am I - Casting Crowns (Lyrics) - YouTube",
+              "snippet": "Because of God's love and goodness in my life, I wholeheartedly made this video to honor, praise and glorify Him, even in the simplest way that I can. I th...",
+              "url": "https://www.youtube.com/watch?v=uu0lRAl3m4w"
+            }
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "37d204e9-423a-4b22-aa3f-8f08a42d812a",
+        "role": "user",
+        "content": "are u smart",
+        "created_at": "2026-07-05T14:23:32.432183"
+      },
+      {
+        "id": "c87060f2-cf3e-4b23-a89f-7c0b3222c6b3",
+        "role": "assistant",
+        "content": "The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.\n\nWeb Verification: \nWeb results support the idea that there are various quizzes and tests available to assess intelligence, with titles such as \"Am I Smart Quiz\" (wikiHow), \"How Smart Are You?\" (Quizly), and \"What % Smart Are You?\" (HowStuffWorks). However, the local memory context does not provide a direct answer to the question, and there is no contradiction between the local memory and web results. Relevant web result URLs include https://www.wikihow.com/Am-I-Smart and https://quizly.co/how-intelligent-are-you/.",
+        "created_at": "2026-07-05T14:24:34.267880",
+        "query": {
+          "query_text": "are u smart",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+                "original_text": "LLM model not configured.",
+                "normalized_text": "how are you -> LLM model not configured.",
+                "subject": "how are you",
+                "predicate": "answered_by",
+                "object_value": "LLM model not configured.",
+                "timestamp": "2026-07-04T12:18:52.201643",
+                "reinforcement_count": 1,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+                "score": 0.7465278833520134,
+                "recency_component": 0.8970340356285876,
+                "reinforcement_component": 0.3934693402873666,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.90, reinforcement=0.39, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "ed73f65f-dd28-47fd-907a-c83699ba8c37",
+                "original_text": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.\n\nWeb Verification: \nWeb results support the idea that \"who am I\" is a complex question that can be answered through self-reflection and exploration. Relevant web result titles include \"Who Am I? 15 Self-Discovery Prompts to Find Your Purpose\" (https://empowerprocess.com/purpose/who-am-i-15-self-discovery-prompts-to-find-your-purpose/), \"Who am I = what is my identity?\" (https://ideapod.com/who-am-i-the-answer-to-lifes-most-defining-question/), and \"Know Yourself? 6 Specific Ways to Know Who You Are\" (https://www.psychologytoday.com/us/blog/changepower/201603/know-yourself-6-specific-ways-to-know-who-you-are). There are no unresolved local-memory contradictions that affect the answer.",
+                "normalized_text": "who am  i -> The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.",
+                "subject": "who am  i",
+                "predicate": "answered_by",
+                "object_value": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.",
+                "timestamp": "2026-07-05T14:18:10.748406",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "18b3a4a1-1d1a-5f0d-a62b-c00d4c17a0aa"
+              },
+              "trust_score": {
+                "fact_id": "ed73f65f-dd28-47fd-907a-c83699ba8c37",
+                "score": 0.6498495807899788,
+                "recency_component": 0.9996239519749469,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "original_text": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.\n\nWeb Verification: Web results support the answer, with multiple sources confirming Donald Trump's presidency and biography, including Britannica (https://www.britannica.com/biography/Donald-Trump), Wikipedia (https://en.wikipedia.org/wiki/Political_career_of_Donald_Trump), and official White House (https://www.whitehouse.gov/administration/donald-j-trump/) and Trump Organization (https://www.trump.com/leadership/donald-j-trump-biography/hello) websites.",
+                "normalized_text": "who is trump -> Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "subject": "who is trump",
+                "predicate": "answered_by",
+                "object_value": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "timestamp": "2026-07-05T14:15:10.768403",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "score": 0.6497662967231308,
+                "recency_component": 0.999415741807827,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.\n\nWeb Verification: \nWeb results support the idea that there are various quizzes and tests available to assess intelligence, with titles such as \"Am I Smart Quiz\" (wikiHow), \"How Smart Are You?\" (Quizly), and \"What % Smart Are You?\" (HowStuffWorks). However, the local memory context does not provide a direct answer to the question, and there is no contradiction between the local memory and web results. Relevant web result URLs include https://www.wikihow.com/Am-I-Smart and https://quizly.co/how-intelligent-are-you/.",
+          "web_results": [
+            {
+              "title": "Am I Smart Quiz - wikiHow",
+              "snippet": "For over 100 years, psychologists and academics have crafted different types of intelligence tests, some of which boil a person's intelligence down to a single number (an IQ). But this test is different! Your mind is unique, vibrant, and...",
+              "url": "https://www.wikihow.com/Am-I-Smart"
+            },
+            {
+              "title": "Am I Smart? QUIZ - How Smart Are You? - Quizondo",
+              "snippet": "Do you think you are smart ? Try to ace this 'am I smart quiz,' and the puzzle will surely be solved.",
+              "url": "https://quizondo.com/am-i-smart-quiz/"
+            },
+            {
+              "title": "Am I Smart? See How Smart You Are In Our Free Online IQ Test - Quizly",
+              "snippet": "How smart are you? Find your true intelligence with a free IQ test. Get your IQ score, and see how intelligent you truly are . Play quiz!",
+              "url": "https://quizly.co/how-intelligent-are-you/"
+            },
+            {
+              "title": "How Smart Are You Quiz | IQ & Genius Test - ProProfs Quiz",
+              "snippet": "Think you're smarter than most people? This How Smart Are You quiz challenges your reasoning, problem-solving, and logic skills through fun and thought-provoking questions. Discover how quick your mind really is while tackling puzzles and short challenges designed to test your intelligence. This genius quiz works much like an IQ test, helping you see how your mind performs under pressure. No ...",
+              "url": "https://www.proprofs.com/quiz-school/story.php?title=1dq-how-smart-are-you-game"
+            },
+            {
+              "title": "What % Smart Are You? - HowStuffWorks",
+              "snippet": "There's more to being smart than just the things you learn in books. In this quiz, we'll look at all the varied aspects that make up the concept of being bright. This will include general knowledge, preferences that have been scientifically tied to those with higher levels of intelligence, street smarts , emotional intelligence and so on.",
+              "url": "https://play.howstuffworks.com/quiz/what-smart-are-you"
+            },
+            {
+              "title": "Are You Smart, Average, Or Dumb? - ProProfs Quiz",
+              "snippet": "Take the Are You Smart , Average, or Dumb? Quiz to uncover your intellectual strengths. Are you smarter than most, or just average? Find out by taking this quiz.",
+              "url": "https://www.proprofs.com/quiz-school/story.php?title=are-you-smart-average-dum"
+            },
+            {
+              "title": "Am I Smart? 10 Signs of Truly Intelligent People | 2026",
+              "snippet": "Discover the 10 key signs that reveal if you're truly intelligent. Learn how smart people think, act, and make decisions in daily life.",
+              "url": "https://psychologyfor.com/im-smart-10-signs-to-detect-intelligent-people/"
+            },
+            {
+              "title": "Am I Dumb Test - Intelligence Test - How Smart Are You?",
+              "snippet": "Bet you aren't as smart as you think you are . Take this quick intelligence test and find out how well you compare with the rest of the world. Click \"Start The Quiz\" and answer the questions. Find out how smart you are !",
+              "url": "http://am-i-dumb.com/"
+            },
+            {
+              "title": "How Smart Are You? | BrainFall",
+              "snippet": "Are you the smartest person everywhere you go? This quiz is your chance to prove just how smart you are .",
+              "url": "https://brainfall.com/quizzes/how-smart-are-you/"
+            },
+            {
+              "title": "This 66-Question IQ Test Will Reveal How Smart You Are",
+              "snippet": "This 66-Question IQ Test Will Reveal How Smart You Actually Are You might be as smart as Sheldon Cooper.",
+              "url": "https://www.buzzfeed.com/evelinamedina/iq-test"
+            }
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "49635eb1-de03-44b3-b22c-b0f29cae7c5b",
+        "role": "user",
+        "content": "what  document did i upload",
+        "created_at": "2026-07-05T14:26:55.928654"
+      },
+      {
+        "id": "b4790074-df0e-47ce-9f78-752b9880c492",
+        "role": "assistant",
+        "content": "The document you uploaded is not specified in the provided local memory context or web search results. There is no information available about the type or content of the document.\n\nWeb Verification: \nWeb results do not verify the answer as there is no information available about the document you uploaded. Relevant web result titles include \"Upload files & folders to Google Drive\", \"How can I find what was uploaded or downloaded on my computer?\", and \"How to Upload Files (A Complete Step-by-Step Guide)\". However, these results provide general information about uploading files and do not mention a specific document.",
+        "created_at": "2026-07-05T14:27:14.753822",
+        "query": {
+          "query_text": "what  document did i upload",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+                "original_text": "LLM model not configured.",
+                "normalized_text": "how are you -> LLM model not configured.",
+                "subject": "how are you",
+                "predicate": "answered_by",
+                "object_value": "LLM model not configured.",
+                "timestamp": "2026-07-04T12:18:52.201643",
+                "reinforcement_count": 1,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+                "score": 0.7464433499448103,
+                "recency_component": 0.8968227021105801,
+                "reinforcement_component": 0.3934693402873666,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.90, reinforcement=0.39, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "1c5f621d-3fa6-4faa-9c9b-bd4f83579ff5",
+                "original_text": "The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.\n\nWeb Verification: \nWeb results support the idea that there are various quizzes and tests available to assess intelligence, with titles such as \"Am I Smart Quiz\" (wikiHow), \"How Smart Are You?\" (Quizly), and \"What % Smart Are You?\" (HowStuffWorks). However, the local memory context does not provide a direct answer to the question, and there is no contradiction between the local memory and web results. Relevant web result URLs include https://www.wikihow.com/Am-I-Smart and https://quizly.co/how-intelligent-are-you/.",
+                "normalized_text": "are u smart -> The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.",
+                "subject": "are u smart",
+                "predicate": "answered_by",
+                "object_value": "The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.",
+                "timestamp": "2026-07-05T14:23:38.701347",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "7609ec9a-228d-5039-abee-4747b8c84f7e"
+              },
+              "trust_score": {
+                "fact_id": "1c5f621d-3fa6-4faa-9c9b-bd4f83579ff5",
+                "score": 0.6499071456762973,
+                "recency_component": 0.9997678641907429,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "ed73f65f-dd28-47fd-907a-c83699ba8c37",
+                "original_text": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.\n\nWeb Verification: \nWeb results support the idea that \"who am I\" is a complex question that can be answered through self-reflection and exploration. Relevant web result titles include \"Who Am I? 15 Self-Discovery Prompts to Find Your Purpose\" (https://empowerprocess.com/purpose/who-am-i-15-self-discovery-prompts-to-find-your-purpose/), \"Who am I = what is my identity?\" (https://ideapod.com/who-am-i-the-answer-to-lifes-most-defining-question/), and \"Know Yourself? 6 Specific Ways to Know Who You Are\" (https://www.psychologytoday.com/us/blog/changepower/201603/know-yourself-6-specific-ways-to-know-who-you-are). There are no unresolved local-memory contradictions that affect the answer.",
+                "normalized_text": "who am  i -> The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.",
+                "subject": "who am  i",
+                "predicate": "answered_by",
+                "object_value": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.",
+                "timestamp": "2026-07-05T14:18:10.748406",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "18b3a4a1-1d1a-5f0d-a62b-c00d4c17a0aa"
+              },
+              "trust_score": {
+                "fact_id": "ed73f65f-dd28-47fd-907a-c83699ba8c37",
+                "score": 0.6497553796613416,
+                "recency_component": 0.999388449153354,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "original_text": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.\n\nWeb Verification: Web results support the answer, with multiple sources confirming Donald Trump's presidency and biography, including Britannica (https://www.britannica.com/biography/Donald-Trump), Wikipedia (https://en.wikipedia.org/wiki/Political_career_of_Donald_Trump), and official White House (https://www.whitehouse.gov/administration/donald-j-trump/) and Trump Organization (https://www.trump.com/leadership/donald-j-trump-biography/hello) websites.",
+                "normalized_text": "who is trump -> Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "subject": "who is trump",
+                "predicate": "answered_by",
+                "object_value": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "timestamp": "2026-07-05T14:15:10.768403",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "score": 0.6496721152155048,
+                "recency_component": 0.999180288038762,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "The document you uploaded is not specified in the provided local memory context or web search results. There is no information available about the type or content of the document.\n\nWeb Verification: \nWeb results do not verify the answer as there is no information available about the document you uploaded. Relevant web result titles include \"Upload files & folders to Google Drive\", \"How can I find what was uploaded or downloaded on my computer?\", and \"How to Upload Files (A Complete Step-by-Step Guide)\". However, these results provide general information about uploading files and do not mention a specific document.",
+          "web_results": [
+            {
+              "title": "Upload files & folders to Google Drive - Computer - Google Drive Help",
+              "snippet": "Convert documents into Google formats If you want to upload files like Microsoft Word documents , you can change a setting to convert files. Important: You can only change Google Drive settings from your computer.",
+              "url": "https://support.google.com/drive/answer/2424368?hl=en&co=GENIE.Platform=Desktop/"
+            },
+            {
+              "title": "How can I find what was uploaded or downloaded on my computer?",
+              "snippet": "Dear Forum, Two nights ago I was on my computer when I noticed the router light continuously blinking, indicating that data was either being uploaded or downloaded. I thought the router buffer was full so I reset the router and cleared the buffer. The router continued to either upload or download data. I noticed after an hour and a half that my C: drive hard disk space had decreased by 15 GB ...",
+              "url": "https://learn.microsoft.com/en-us/answers/questions/2806919/how-can-i-find-what-was-uploaded-or-downloaded-on"
+            },
+            {
+              "title": "Google Docs",
+              "snippet": "Create and edit web-based documents , spreadsheets, and presentations. Store documents online and access them from any computer.",
+              "url": "https://docs.google.com/"
+            },
+            {
+              "title": "I need to upload a document and I don't know how, could someone please ...",
+              "snippet": "Uploading the file means the opposite of downloading it to your PC, you're sending it out of your PC to a recipient you choose. If it's an organization or app the recipient you're uploading it to should provide a way to do this.",
+              "url": "https://learn.microsoft.com/en-us/answers/questions/4147055/i-need-to-upload-a-document-and-i-dont-know-how-co"
+            },
+            {
+              "title": "IRS Document Upload Tool - Internal Revenue Service",
+              "snippet": "How it works The IRS Document Upload Tool is a secure, easy and fast way to send information to the IRS. You can use the tool to: Upload scans, photos, or digital copies of documents as JPGs, PNGs or PDFs Get confirmation that we received your documents If you don't have an access code You can enter the notice or letter number.",
+              "url": "https://www.irs.gov/help/irs-document-upload-tool"
+            },
+            {
+              "title": "CheckFileType.com - Free Online File Type Checker",
+              "snippet": "Have you ever found a file on your computer without an extension or has an incorrect extension? CheckFiletype.com helps you determine the true file type of any file based on the content of the file, not the extension. Simply use our online tool to upload the file and we will test it and show you the results.",
+              "url": "https://www.checkfiletype.com/"
+            },
+            {
+              "title": "The IRS Online Account \"Document History\" Section: Proof You Submitted ...",
+              "snippet": "The \" Document History\" section \u2014 a digital record of every file you've uploaded, every response you've submitted, and the timestamp proving it. If your refund is delayed, this section is your legal defense.",
+              "url": "https://refundtalk.com/the-irs-online-account-document-history-section-proof-you-submitted-everything/"
+            },
+            {
+              "title": "Form I-9 Acceptable Documents - USCIS",
+              "snippet": "The documents on List A show both identity and employment authorization. Employees presenting an acceptable List A document should not be asked to present any other document . Some List A documents are in fact a combination of 2 or more documents . In these cases, the documents presented together count as one List A document .",
+              "url": "https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents"
+            },
+            {
+              "title": "Submit Documents - Travel",
+              "snippet": "Step 9: Upload and Submit Scanned Documents IMPORTANT: Do not send any documents to NVC by mail. However, you must bring every civil document you uploaded and submitted with your application to your visa interview. To submit documents , log into CEAC and go to the \"Start Now\" buttons located under Affidavit of Support Documents and Civil ...",
+              "url": "https://travel.state.gov/content/travel/en/us-visas/immigrate/the-immigrant-visa-process/step-8-scan-collected-documents/step-9-upload-and-submit-scanned-documents.html"
+            },
+            {
+              "title": "How to Upload Files (A Complete Step-by-Step Guide) - wikiHow",
+              "snippet": "How to Upload Files Find a site that'll let you upload your file to their server. Locate their Browse or Upload button and click on it. Find and select the file that you want to upload when prompted. Click Upload or Upload File.",
+              "url": "https://www.wikihow.com/Upload-a-File"
+            }
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "id": "b60d9ee3-d43f-478f-bb22-88e196bc11cb",
+        "role": "user",
+        "content": "hi",
+        "created_at": "2026-07-05T14:31:32.448656"
+      },
+      {
+        "id": "6dc4b743-8fd4-4c68-a2e3-73aa9c4335ae",
+        "role": "assistant",
+        "content": "Hello. Is there something I can help you with or would you like to discuss a particular topic?",
+        "created_at": "2026-07-05T14:31:41.206536",
+        "query": {
+          "query_text": "hi",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "ed73f65f-dd28-47fd-907a-c83699ba8c37",
+                "original_text": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.\n\nWeb Verification: \nWeb results support the idea that \"who am I\" is a complex question that can be answered through self-reflection and exploration. Relevant web result titles include \"Who Am I? 15 Self-Discovery Prompts to Find Your Purpose\" (https://empowerprocess.com/purpose/who-am-i-15-self-discovery-prompts-to-find-your-purpose/), \"Who am I = what is my identity?\" (https://ideapod.com/who-am-i-the-answer-to-lifes-most-defining-question/), and \"Know Yourself? 6 Specific Ways to Know Who You Are\" (https://www.psychologytoday.com/us/blog/changepower/201603/know-yourself-6-specific-ways-to-know-who-you-are). There are no unresolved local-memory contradictions that affect the answer.",
+                "normalized_text": "who am  i -> The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.",
+                "subject": "who am  i",
+                "predicate": "answered_by",
+                "object_value": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.",
+                "timestamp": "2026-07-05T14:18:10.748406",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "18b3a4a1-1d1a-5f0d-a62b-c00d4c17a0aa"
+              },
+              "trust_score": {
+                "fact_id": "ed73f65f-dd28-47fd-907a-c83699ba8c37",
+                "score": 0.6496251074228091,
+                "recency_component": 0.9990627685570227,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "original_text": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.\n\nWeb Verification: Web results support the answer, with multiple sources confirming Donald Trump's presidency and biography, including Britannica (https://www.britannica.com/biography/Donald-Trump), Wikipedia (https://en.wikipedia.org/wiki/Political_career_of_Donald_Trump), and official White House (https://www.whitehouse.gov/administration/donald-j-trump/) and Trump Organization (https://www.trump.com/leadership/donald-j-trump-biography/hello) websites.",
+                "normalized_text": "who is trump -> Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "subject": "who is trump",
+                "predicate": "answered_by",
+                "object_value": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "timestamp": "2026-07-05T14:15:10.768403",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "score": 0.6495418701111806,
+                "recency_component": 0.9988546752779516,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "Hello. Is there something I can help you with or would you like to discuss a particular topic?",
+          "contradictions": []
+        }
+      },
+      {
+        "id": "dd288785-f4b3-445f-977f-5dcb4986e035",
+        "role": "user",
+        "content": "i  uploaded a .md file",
+        "created_at": "2026-07-05T14:32:22.628606"
+      },
+      {
+        "id": "ee5808b6-100d-48f3-bdb6-f7bc41a8f650",
+        "role": "assistant",
+        "content": "You claim to have uploaded a .md file, but the local memory context does not specify the type of document you uploaded. There is a discrepancy between your claim and the available information.",
+        "created_at": "2026-07-05T14:32:26.165538",
+        "query": {
+          "query_text": "i  uploaded a .md file",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+                "original_text": "LLM model not configured.",
+                "normalized_text": "how are you -> LLM model not configured.",
+                "subject": "how are you",
+                "predicate": "answered_by",
+                "object_value": "LLM model not configured.",
+                "timestamp": "2026-07-04T12:18:52.201643",
+                "reinforcement_count": 1,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+                "score": 0.7463077733821079,
+                "recency_component": 0.896483760703824,
+                "reinforcement_component": 0.3934693402873666,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.90, reinforcement=0.39, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "a76e926d-8cb8-4f32-bc4e-b70fcc9e0042",
+                "original_text": "The document you uploaded is not specified in the provided local memory context or web search results. There is no information available about the type or content of the document.\n\nWeb Verification: \nWeb results do not verify the answer as there is no information available about the document you uploaded. Relevant web result titles include \"Upload files & folders to Google Drive\", \"How can I find what was uploaded or downloaded on my computer?\", and \"How to Upload Files (A Complete Step-by-Step Guide)\". However, these results provide general information about uploading files and do not mention a specific document.",
+                "normalized_text": "what  document did i upload -> The document you uploaded is not specified in the provided local memory context or web search results. There is no information available about the type or content of the document.",
+                "subject": "what  document did i upload",
+                "predicate": "answered_by",
+                "object_value": "The document you uploaded is not specified in the provided local memory context or web search results. There is no information available about the type or content of the document.",
+                "timestamp": "2026-07-05T14:27:04.084808",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "7609ec9a-228d-5039-abee-4747b8c84f7e"
+              },
+              "trust_score": {
+                "fact_id": "a76e926d-8cb8-4f32-bc4e-b70fcc9e0042",
+                "score": 0.6498510446794596,
+                "recency_component": 0.9996276116986491,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "1c5f621d-3fa6-4faa-9c9b-bd4f83579ff5",
+                "original_text": "The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.\n\nWeb Verification: \nWeb results support the idea that there are various quizzes and tests available to assess intelligence, with titles such as \"Am I Smart Quiz\" (wikiHow), \"How Smart Are You?\" (Quizly), and \"What % Smart Are You?\" (HowStuffWorks). However, the local memory context does not provide a direct answer to the question, and there is no contradiction between the local memory and web results. Relevant web result URLs include https://www.wikihow.com/Am-I-Smart and https://quizly.co/how-intelligent-are-you/.",
+                "normalized_text": "are u smart -> The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.",
+                "subject": "are u smart",
+                "predicate": "answered_by",
+                "object_value": "The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.",
+                "timestamp": "2026-07-05T14:23:38.701347",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "7609ec9a-228d-5039-abee-4747b8c84f7e"
+              },
+              "trust_score": {
+                "fact_id": "1c5f621d-3fa6-4faa-9c9b-bd4f83579ff5",
+                "score": 0.6497560064486567,
+                "recency_component": 0.9993900161216419,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "ed73f65f-dd28-47fd-907a-c83699ba8c37",
+                "original_text": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.\n\nWeb Verification: \nWeb results support the idea that \"who am I\" is a complex question that can be answered through self-reflection and exploration. Relevant web result titles include \"Who Am I? 15 Self-Discovery Prompts to Find Your Purpose\" (https://empowerprocess.com/purpose/who-am-i-15-self-discovery-prompts-to-find-your-purpose/), \"Who am I = what is my identity?\" (https://ideapod.com/who-am-i-the-answer-to-lifes-most-defining-question/), and \"Know Yourself? 6 Specific Ways to Know Who You Are\" (https://www.psychologytoday.com/us/blog/changepower/201603/know-yourself-6-specific-ways-to-know-who-you-are). There are no unresolved local-memory contradictions that affect the answer.",
+                "normalized_text": "who am  i -> The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.",
+                "subject": "who am  i",
+                "predicate": "answered_by",
+                "object_value": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.",
+                "timestamp": "2026-07-05T14:18:10.748406",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "18b3a4a1-1d1a-5f0d-a62b-c00d4c17a0aa"
+              },
+              "trust_score": {
+                "fact_id": "ed73f65f-dd28-47fd-907a-c83699ba8c37",
+                "score": 0.6496042977915117,
+                "recency_component": 0.9990107444787792,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "original_text": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.\n\nWeb Verification: Web results support the answer, with multiple sources confirming Donald Trump's presidency and biography, including Britannica (https://www.britannica.com/biography/Donald-Trump), Wikipedia (https://en.wikipedia.org/wiki/Political_career_of_Donald_Trump), and official White House (https://www.whitehouse.gov/administration/donald-j-trump/) and Trump Organization (https://www.trump.com/leadership/donald-j-trump-biography/hello) websites.",
+                "normalized_text": "who is trump -> Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "subject": "who is trump",
+                "predicate": "answered_by",
+                "object_value": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "timestamp": "2026-07-05T14:15:10.768403",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "score": 0.64952106481429,
+                "recency_component": 0.998802662035725,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "You claim to have uploaded a .md file, but the local memory context does not specify the type of document you uploaded. There is a discrepancy between your claim and the available information.",
+          "contradictions": []
+        }
+      },
+      {
+        "id": "7de38788-4851-4bb8-8425-b19583e090b5",
+        "role": "user",
+        "content": "check",
+        "created_at": "2026-07-05T14:32:51.501760"
+      },
+      {
+        "id": "47693d5c-e64d-49a1-afa1-2f7bb50ec140",
+        "role": "assistant",
+        "content": "The provided memory context doesn't relate to your question \"check.\" Could you provide more context or clarify what you mean by \"check\"?",
+        "created_at": "2026-07-05T14:32:54.737841",
+        "query": {
+          "query_text": "check",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "1c5f621d-3fa6-4faa-9c9b-bd4f83579ff5",
+                "original_text": "The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.\n\nWeb Verification: \nWeb results support the idea that there are various quizzes and tests available to assess intelligence, with titles such as \"Am I Smart Quiz\" (wikiHow), \"How Smart Are You?\" (Quizly), and \"What % Smart Are You?\" (HowStuffWorks). However, the local memory context does not provide a direct answer to the question, and there is no contradiction between the local memory and web results. Relevant web result URLs include https://www.wikihow.com/Am-I-Smart and https://quizly.co/how-intelligent-are-you/.",
+                "normalized_text": "are u smart -> The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.",
+                "subject": "are u smart",
+                "predicate": "answered_by",
+                "object_value": "The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.",
+                "timestamp": "2026-07-05T14:23:38.701347",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "7609ec9a-228d-5039-abee-4747b8c84f7e"
+              },
+              "trust_score": {
+                "fact_id": "1c5f621d-3fa6-4faa-9c9b-bd4f83579ff5",
+                "score": 0.649742761210871,
+                "recency_component": 0.9993569030271774,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "The provided memory context doesn't relate to your question \"check.\" Could you provide more context or clarify what you mean by \"check\"?",
+          "contradictions": []
+        }
+      },
+      {
+        "id": "8f78db57-a01d-4d48-970e-8fb969f0a8b7",
+        "role": "user",
+        "content": "check the local memory",
+        "created_at": "2026-07-05T14:33:14.509525"
+      },
+      {
+        "id": "49e4d795-8e92-442e-adc9-8235935594f5",
+        "role": "assistant",
+        "content": "The local memory context contains information on the following topics: \n1. A document you uploaded (no details specified)\n2. Assessing intelligence through online quizzes\n3. Exploring personal identity\n4. Information about Donald Trump, the 45th and 47th president of the United States. \n\nAll facts have a trust score of 0.65 and are marked as active.",
+        "created_at": "2026-07-05T14:33:18.398654",
+        "query": {
+          "query_text": "check the local memory",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "a76e926d-8cb8-4f32-bc4e-b70fcc9e0042",
+                "original_text": "The document you uploaded is not specified in the provided local memory context or web search results. There is no information available about the type or content of the document.\n\nWeb Verification: \nWeb results do not verify the answer as there is no information available about the document you uploaded. Relevant web result titles include \"Upload files & folders to Google Drive\", \"How can I find what was uploaded or downloaded on my computer?\", and \"How to Upload Files (A Complete Step-by-Step Guide)\". However, these results provide general information about uploading files and do not mention a specific document.",
+                "normalized_text": "what  document did i upload -> The document you uploaded is not specified in the provided local memory context or web search results. There is no information available about the type or content of the document.",
+                "subject": "what  document did i upload",
+                "predicate": "answered_by",
+                "object_value": "The document you uploaded is not specified in the provided local memory context or web search results. There is no information available about the type or content of the document.",
+                "timestamp": "2026-07-05T14:27:04.084808",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "7609ec9a-228d-5039-abee-4747b8c84f7e"
+              },
+              "trust_score": {
+                "fact_id": "a76e926d-8cb8-4f32-bc4e-b70fcc9e0042",
+                "score": 0.6498270214294355,
+                "recency_component": 0.9995675535735885,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "1c5f621d-3fa6-4faa-9c9b-bd4f83579ff5",
+                "original_text": "The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.\n\nWeb Verification: \nWeb results support the idea that there are various quizzes and tests available to assess intelligence, with titles such as \"Am I Smart Quiz\" (wikiHow), \"How Smart Are You?\" (Quizly), and \"What % Smart Are You?\" (HowStuffWorks). However, the local memory context does not provide a direct answer to the question, and there is no contradiction between the local memory and web results. Relevant web result URLs include https://www.wikihow.com/Am-I-Smart and https://quizly.co/how-intelligent-are-you/.",
+                "normalized_text": "are u smart -> The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.",
+                "subject": "are u smart",
+                "predicate": "answered_by",
+                "object_value": "The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.",
+                "timestamp": "2026-07-05T14:23:38.701347",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "7609ec9a-228d-5039-abee-4747b8c84f7e"
+              },
+              "trust_score": {
+                "fact_id": "1c5f621d-3fa6-4faa-9c9b-bd4f83579ff5",
+                "score": 0.6497319889085769,
+                "recency_component": 0.999329972271442,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "ed73f65f-dd28-47fd-907a-c83699ba8c37",
+                "original_text": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.\n\nWeb Verification: \nWeb results support the idea that \"who am I\" is a complex question that can be answered through self-reflection and exploration. Relevant web result titles include \"Who Am I? 15 Self-Discovery Prompts to Find Your Purpose\" (https://empowerprocess.com/purpose/who-am-i-15-self-discovery-prompts-to-find-your-purpose/), \"Who am I = what is my identity?\" (https://ideapod.com/who-am-i-the-answer-to-lifes-most-defining-question/), and \"Know Yourself? 6 Specific Ways to Know Who You Are\" (https://www.psychologytoday.com/us/blog/changepower/201603/know-yourself-6-specific-ways-to-know-who-you-are). There are no unresolved local-memory contradictions that affect the answer.",
+                "normalized_text": "who am  i -> The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.",
+                "subject": "who am  i",
+                "predicate": "answered_by",
+                "object_value": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.",
+                "timestamp": "2026-07-05T14:18:10.748406",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "18b3a4a1-1d1a-5f0d-a62b-c00d4c17a0aa"
+              },
+              "trust_score": {
+                "fact_id": "ed73f65f-dd28-47fd-907a-c83699ba8c37",
+                "score": 0.6495802893661635,
+                "recency_component": 0.9989507234154086,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "original_text": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.\n\nWeb Verification: Web results support the answer, with multiple sources confirming Donald Trump's presidency and biography, including Britannica (https://www.britannica.com/biography/Donald-Trump), Wikipedia (https://en.wikipedia.org/wiki/Political_career_of_Donald_Trump), and official White House (https://www.whitehouse.gov/administration/donald-j-trump/) and Trump Organization (https://www.trump.com/leadership/donald-j-trump-biography/hello) websites.",
+                "normalized_text": "who is trump -> Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "subject": "who is trump",
+                "predicate": "answered_by",
+                "object_value": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "timestamp": "2026-07-05T14:15:10.768403",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "score": 0.6494970613896205,
+                "recency_component": 0.9987426534740512,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "The local memory context contains information on the following topics: \n1. A document you uploaded (no details specified)\n2. Assessing intelligence through online quizzes\n3. Exploring personal identity\n4. Information about Donald Trump, the 45th and 47th president of the United States. \n\nAll facts have a trust score of 0.65 and are marked as active.",
+          "contradictions": []
+        }
+      },
+      {
+        "id": "0a5c0c14-8d58-4184-965b-df90c36937d8",
+        "role": "user",
+        "content": "i have  a meeting on wednessday",
+        "created_at": "2026-07-05T14:33:57.328464"
+      },
+      {
+        "id": "cc24ab6b-64b0-447d-a1f4-aae9e56dbdc4",
+        "role": "assistant",
+        "content": "You have mentioned that you have a meeting on Wednesday, but there is no information in the provided local memory context to confirm or provide details about this meeting.",
+        "created_at": "2026-07-05T14:34:00.610930",
+        "query": {
+          "query_text": "i have  a meeting on wednessday",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+                "original_text": "LLM model not configured.",
+                "normalized_text": "how are you -> LLM model not configured.",
+                "subject": "how are you",
+                "predicate": "answered_by",
+                "object_value": "LLM model not configured.",
+                "timestamp": "2026-07-04T12:18:52.201643",
+                "reinforcement_count": 1,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "409c6f3f-cb98-4dbb-8d39-be81c7108b74",
+                "score": 0.7462685728980863,
+                "recency_component": 0.8963857594937702,
+                "reinforcement_component": 0.3934693402873666,
+                "consistency_component": 1.0,
+                "reasoning": "recency=0.90, reinforcement=0.39, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "a76e926d-8cb8-4f32-bc4e-b70fcc9e0042",
+                "original_text": "The document you uploaded is not specified in the provided local memory context or web search results. There is no information available about the type or content of the document.\n\nWeb Verification: \nWeb results do not verify the answer as there is no information available about the document you uploaded. Relevant web result titles include \"Upload files & folders to Google Drive\", \"How can I find what was uploaded or downloaded on my computer?\", and \"How to Upload Files (A Complete Step-by-Step Guide)\". However, these results provide general information about uploading files and do not mention a specific document.",
+                "normalized_text": "what  document did i upload -> The document you uploaded is not specified in the provided local memory context or web search results. There is no information available about the type or content of the document.",
+                "subject": "what  document did i upload",
+                "predicate": "answered_by",
+                "object_value": "The document you uploaded is not specified in the provided local memory context or web search results. There is no information available about the type or content of the document.",
+                "timestamp": "2026-07-05T14:27:04.084808",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "7609ec9a-228d-5039-abee-4747b8c84f7e"
+              },
+              "trust_score": {
+                "fact_id": "a76e926d-8cb8-4f32-bc4e-b70fcc9e0042",
+                "score": 0.649807334031328,
+                "recency_component": 0.99951833507832,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "1c5f621d-3fa6-4faa-9c9b-bd4f83579ff5",
+                "original_text": "The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.\n\nWeb Verification: \nWeb results support the idea that there are various quizzes and tests available to assess intelligence, with titles such as \"Am I Smart Quiz\" (wikiHow), \"How Smart Are You?\" (Quizly), and \"What % Smart Are You?\" (HowStuffWorks). However, the local memory context does not provide a direct answer to the question, and there is no contradiction between the local memory and web results. Relevant web result URLs include https://www.wikihow.com/Am-I-Smart and https://quizly.co/how-intelligent-are-you/.",
+                "normalized_text": "are u smart -> The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.",
+                "subject": "are u smart",
+                "predicate": "answered_by",
+                "object_value": "The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.",
+                "timestamp": "2026-07-05T14:23:38.701347",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "7609ec9a-228d-5039-abee-4747b8c84f7e"
+              },
+              "trust_score": {
+                "fact_id": "1c5f621d-3fa6-4faa-9c9b-bd4f83579ff5",
+                "score": 0.6497123061898507,
+                "recency_component": 0.9992807654746266,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "ed73f65f-dd28-47fd-907a-c83699ba8c37",
+                "original_text": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.\n\nWeb Verification: \nWeb results support the idea that \"who am I\" is a complex question that can be answered through self-reflection and exploration. Relevant web result titles include \"Who Am I? 15 Self-Discovery Prompts to Find Your Purpose\" (https://empowerprocess.com/purpose/who-am-i-15-self-discovery-prompts-to-find-your-purpose/), \"Who am I = what is my identity?\" (https://ideapod.com/who-am-i-the-answer-to-lifes-most-defining-question/), and \"Know Yourself? 6 Specific Ways to Know Who You Are\" (https://www.psychologytoday.com/us/blog/changepower/201603/know-yourself-6-specific-ways-to-know-who-you-are). There are no unresolved local-memory contradictions that affect the answer.",
+                "normalized_text": "who am  i -> The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.",
+                "subject": "who am  i",
+                "predicate": "answered_by",
+                "object_value": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.",
+                "timestamp": "2026-07-05T14:18:10.748406",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "18b3a4a1-1d1a-5f0d-a62b-c00d4c17a0aa"
+              },
+              "trust_score": {
+                "fact_id": "ed73f65f-dd28-47fd-907a-c83699ba8c37",
+                "score": 0.6495606141170908,
+                "recency_component": 0.9989015352927268,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "original_text": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.\n\nWeb Verification: Web results support the answer, with multiple sources confirming Donald Trump's presidency and biography, including Britannica (https://www.britannica.com/biography/Donald-Trump), Wikipedia (https://en.wikipedia.org/wiki/Political_career_of_Donald_Trump), and official White House (https://www.whitehouse.gov/administration/donald-j-trump/) and Trump Organization (https://www.trump.com/leadership/donald-j-trump-biography/hello) websites.",
+                "normalized_text": "who is trump -> Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "subject": "who is trump",
+                "predicate": "answered_by",
+                "object_value": "Donald Trump is the 45th and 47th president of the United States, having served from 2017 to 2021 and again starting in 2025. He is a real estate mogul and former reality TV star. Trump has been impeached twice by the U.S. House of Representatives and was defeated by his Democratic opponent in the 2020 presidential election. However, he won the 2024 presidential election and returned to the White House.",
+                "timestamp": "2026-07-05T14:15:10.768403",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": null
+              },
+              "trust_score": {
+                "fact_id": "bd6f4577-698e-4ec8-910a-400164cd3f70",
+                "score": 0.6494773902386759,
+                "recency_component": 0.9986934755966895,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "You have mentioned that you have a meeting on Wednesday, but there is no information in the provided local memory context to confirm or provide details about this meeting.",
+          "contradictions": []
+        }
+      },
+      {
+        "id": "c5cc6dd8-9d46-407f-96c0-e1a1bfc78009",
+        "role": "user",
+        "content": "remeber now",
+        "created_at": "2026-07-05T14:34:31.037229"
+      },
+      {
+        "id": "95ba56d0-fbbc-4e15-a10e-36340eb3161f",
+        "role": "assistant",
+        "content": "There is no information to recall with \"remeber now\". The available context only includes information about assessing intelligence and exploring self-identity.",
+        "created_at": "2026-07-05T14:34:34.528507",
+        "query": {
+          "query_text": "remeber now",
+          "ranked_facts": [
+            {
+              "fact": {
+                "fact_id": "1c5f621d-3fa6-4faa-9c9b-bd4f83579ff5",
+                "original_text": "The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.\n\nWeb Verification: \nWeb results support the idea that there are various quizzes and tests available to assess intelligence, with titles such as \"Am I Smart Quiz\" (wikiHow), \"How Smart Are You?\" (Quizly), and \"What % Smart Are You?\" (HowStuffWorks). However, the local memory context does not provide a direct answer to the question, and there is no contradiction between the local memory and web results. Relevant web result URLs include https://www.wikihow.com/Am-I-Smart and https://quizly.co/how-intelligent-are-you/.",
+                "normalized_text": "are u smart -> The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.",
+                "subject": "are u smart",
+                "predicate": "answered_by",
+                "object_value": "The question of whether you are smart is subjective and can be explored through various quizzes and tests available online, such as those found on wikiHow, Quizondo, and Quizly. These quizzes aim to assess different aspects of intelligence, including reasoning, problem-solving, logic, and general knowledge. However, it's essential to remember that intelligence is a complex and multi-faceted trait that cannot be fully captured by a single test or quiz.",
+                "timestamp": "2026-07-05T14:23:38.701347",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "7609ec9a-228d-5039-abee-4747b8c84f7e"
+              },
+              "trust_score": {
+                "fact_id": "1c5f621d-3fa6-4faa-9c9b-bd4f83579ff5",
+                "score": 0.6496966774361173,
+                "recency_component": 0.999241693590293,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            },
+            {
+              "fact": {
+                "fact_id": "ed73f65f-dd28-47fd-907a-c83699ba8c37",
+                "original_text": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.\n\nWeb Verification: \nWeb results support the idea that \"who am I\" is a complex question that can be answered through self-reflection and exploration. Relevant web result titles include \"Who Am I? 15 Self-Discovery Prompts to Find Your Purpose\" (https://empowerprocess.com/purpose/who-am-i-15-self-discovery-prompts-to-find-your-purpose/), \"Who am I = what is my identity?\" (https://ideapod.com/who-am-i-the-answer-to-lifes-most-defining-question/), and \"Know Yourself? 6 Specific Ways to Know Who You Are\" (https://www.psychologytoday.com/us/blog/changepower/201603/know-yourself-6-specific-ways-to-know-who-you-are). There are no unresolved local-memory contradictions that affect the answer.",
+                "normalized_text": "who am  i -> The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.",
+                "subject": "who am  i",
+                "predicate": "answered_by",
+                "object_value": "The question \"who am I\" is a deeply personal and philosophical inquiry that can be explored through self-discovery prompts, understanding one's identity, and recognizing the importance of knowing oneself. It is a question that has been approached from various perspectives, including psychology, sociology, philosophy, and spirituality.",
+                "timestamp": "2026-07-05T14:18:10.748406",
+                "reinforcement_count": 0,
+                "source": "web_answer",
+                "status": "active",
+                "contradiction_group": null,
+                "contradiction_explanation": null,
+                "cognee_data_id": "18b3a4a1-1d1a-5f0d-a62b-c00d4c17a0aa"
+              },
+              "trust_score": {
+                "fact_id": "ed73f65f-dd28-47fd-907a-c83699ba8c37",
+                "score": 0.6495449912945184,
+                "recency_component": 0.9988624782362958,
+                "reinforcement_component": 0.0,
+                "consistency_component": 1.0,
+                "reasoning": "recency=1.00, reinforcement=0.00, consistency=1.00"
+              },
+              "memory_result": null
+            }
+          ],
+          "answer_text": "There is no information to recall with \"remeber now\". The available context only includes information about assessing intelligence and exploring self-identity.",
+          "contradictions": []
+        }
+      }
+    ]
   }
 }

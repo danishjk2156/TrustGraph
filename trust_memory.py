@@ -41,10 +41,8 @@ from trustgraph.models import (
 from trustgraph.prompts import (
     TRUST_AWARE_RESPONSE_PROMPT,
     trust_context_block,
-    web_context_block,
 )
 from trustgraph.trust_scorer import TrustScorer
-from trustgraph.web_search import search_web
 
 
 class TrustMemory:
@@ -180,30 +178,18 @@ class TrustMemory:
         ranked.sort(key=lambda item: item.trust_score.score, reverse=True)
 
         contradictions = await self._active_contradictions(relevant or facts)
-        web_results: list[dict[str, str]] = []
-        should_use_web = _should_search_web(query_text)
-        if should_use_web:
-            web_results = await search_web(query_text)
 
         answer_text = await self._generate_answer(
             query_text,
             ranked,
             contradictions,
-            web_results,
             session_id=session_id,
         )
-        if should_use_web and web_results and answer_text:
-            await self._store_answer_memory(
-                query_text=query_text,
-                answer_text=answer_text,
-                web_results=web_results,
-            )
 
         return QueryResult(
             query_text=query_text,
             ranked_facts=ranked,
             answer_text=answer_text,
-            web_results=web_results,
             contradictions=contradictions,
             raw_results=list(raw_results or []),
         )
@@ -471,68 +457,6 @@ class TrustMemory:
             pass
         return None
 
-    async def _store_answer_memory(
-        self,
-        query_text: str,
-        answer_text: str,
-        web_results: list[dict[str, str]],
-    ) -> None:
-        facts = self._load_facts()
-        normalized_query = _normalize(query_text)
-        source_urls = [
-            item.get("url", "")
-            for item in web_results[:3]
-            if item.get("url")
-        ]
-        clean_answer = _strip_web_verification(answer_text)
-        if not clean_answer:
-            return
-
-        existing = next(
-            (
-                fact
-                for fact in facts
-                if fact.source == "web_answer"
-                and _normalize(fact.subject) == normalized_query
-                and fact.predicate == "answered_by"
-            ),
-            None,
-        )
-        if existing:
-            existing.object_value = clean_answer
-            existing.normalized_text = f"{query_text} -> {clean_answer}"
-            existing.original_text = answer_text
-            existing.reinforcement_count += 1
-            existing.status = FactStatus.ACTIVE
-            self._save_facts(facts)
-            await self._remember(existing, importance_weight=1.0, node_set="trust_answers")
-            await self._improve(feedback_alpha=0.1)
-            return
-
-        fact = TrustMetadata(
-            fact_id=str(uuid4()),
-            original_text=answer_text,
-            normalized_text=f"{query_text} -> {clean_answer}",
-            subject=query_text,
-            predicate="answered_by",
-            object_value=clean_answer,
-            source="web_answer",
-        )
-        memory_text = (
-            f"ANSWER [{fact.fact_id}]: Question: {query_text}\n"
-            f"Answer: {clean_answer}\n"
-            f"Sources: {'; '.join(source_urls) if source_urls else 'none'}\n"
-            f"[trust_fact_id={fact.fact_id}; source=web_answer]"
-        )
-        fact.cognee_data_id = await self._remember_text(
-            memory_text,
-            importance_weight=1.0,
-            node_set="trust_answers",
-        )
-        facts.append(fact)
-        self._save_facts(facts)
-        await self._improve(feedback_alpha=0.1)
-
     async def _recall(
         self,
         query_text: str,
@@ -555,10 +479,8 @@ class TrustMemory:
         query_text: str,
         ranked: list[RankedFact],
         contradictions: list[ContradictionPair],
-        web_results: list[dict[str, str]] | None = None,
         session_id: str | None = None,
     ) -> str:
-        web_results = web_results or []
         _ = session_id or "chat_session_1"
 
         model = _model_name()
@@ -578,8 +500,7 @@ class TrustMemory:
                             "role": "user",
                             "content": (
                                 f"Question: {query_text}\n\n"
-                                f"Memory context:\n{trust_context_block(context_items)}\n\n"
-                                f"Web search context:\n{web_context_block(web_results)}"
+                                f"Memory context:\n{trust_context_block(context_items)}"
                             ),
                         },
                     ],
@@ -602,22 +523,9 @@ class TrustMemory:
             for pair in contradictions
         )
         suffix = "unresolved contradiction" if unresolved else "no contradictions"
-        memory_line = (
+        return (
             f"{fact.normalized_text}. Trust: {score:.2f} | "
             f"Reinforced {fact.reinforcement_count}x | {suffix}"
-        )
-
-        if not web_results:
-            return f"{memory_line}\n\nWeb Verification: No web results were available."
-
-        citations = "; ".join(
-            f"{item.get('title', 'Untitled')} ({item.get('url', '')})"
-            for item in web_results[:3]
-        )
-        return (
-            f"{memory_line}\n\n"
-            "Web Verification: Web results were retrieved for comparison, but no LLM "
-            f"synthesis was available. Review these sources: {citations}"
         )
 
     async def _improve(self, feedback_alpha: float = 0.1) -> None:
@@ -648,67 +556,6 @@ def _normalize(value: str) -> str:
     return " ".join(value.strip().lower().split())
 
 
-def _has_memory_answer(ranked: list[RankedFact]) -> bool:
-    if not ranked:
-        return False
-    top = ranked[0]
-    if top.fact.source == "web_answer":
-        return True
-    return top.trust_score.score >= 0.45
-
-
-def _should_search_web(query_text: str) -> bool:
-    text = query_text.strip()
-    if not text:
-        return False
-
-    normalized = _normalize(text)
-    casual_messages = {
-        "hi",
-        "hello",
-        "hey",
-        "thanks",
-        "thank you",
-        "ok",
-        "okay",
-        "cool",
-        "nice",
-        "bye",
-    }
-    if normalized in casual_messages:
-        return False
-
-    question_starts = (
-        "what ",
-        "when ",
-        "where ",
-        "who ",
-        "why ",
-        "how ",
-        "which ",
-        "is ",
-        "are ",
-        "can ",
-        "could ",
-        "do ",
-        "does ",
-        "did ",
-        "should ",
-        "will ",
-        "latest ",
-        "current ",
-        "today ",
-    )
-    return text.endswith("?") or normalized.startswith(question_starts)
-
-
-def _strip_web_verification(answer_text: str) -> str:
-    marker = "Web Verification"
-    if marker in answer_text:
-        answer_text = answer_text.split(marker, 1)[0]
-    return answer_text.strip(" \n:-")
-
-
 def _contradiction_explanation(fact_a: TrustMetadata, fact_b: TrustMetadata) -> str:
     if (
         _normalize(fact_a.subject) == _normalize(fact_b.subject)
@@ -736,7 +583,6 @@ async def ask_llm(
     question: str,
     system_prompt: str,
     ranked: list[RankedFact] | None = None,
-    web_results: list[dict[str, str]] | None = None,
 ) -> str:
     from cognee.modules.agent_memory import get_current_agent_memory_context
     context = get_current_agent_memory_context()
@@ -753,9 +599,6 @@ async def ask_llm(
 
     combined_memory_context = f"{memory_context}\n\n{local_facts_str}".strip()
 
-    from trustgraph.prompts import web_context_block
-    web_context_str = web_context_block(web_results or [])
-
     model = _model_name()
     if not model:
         return "LLM model not configured."
@@ -769,8 +612,7 @@ async def ask_llm(
         "1. If the user makes any statement or claim that contradicts the facts in the memory context, you MUST explicitly tell them they are WRONG, show the contradicting fact, and explain why they are wrong.\n"
         "2. Do not let the user override verified facts in the context with their own statements.\n"
         "3. If their statement is correct or they are just asking a question, answer them helpfully and concisely.\n\n"
-        f"Memory Context:\n{combined_memory_context}\n\n"
-        f"Web Search Context:\n{web_context_str}"
+        f"Memory Context:\n{combined_memory_context}"
     )
 
     response = await acompletion(

@@ -79,7 +79,6 @@ class QueryResult(BaseModel):
     query_text: str
     ranked_facts: list[RankedFact]
     answer_text: str | None = None
-    web_results: list[dict[str, str]] = Field(default_factory=list)
     contradictions: list[ContradictionPair] = Field(default_factory=list)
     raw_results: list[Any] = Field(default_factory=list)
 
